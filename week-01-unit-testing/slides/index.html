@@ -245,7 +245,8 @@ setup(
 def myfunction():
     return
 </code></pre>
-    <p>Wrap functionality around a function.</p>
+    <p>Wrap functionality around a function</p>
+    <p>These work in Python because functions are 'first class', meaning functions can be passed to functions</p>
     <p>Support the <a target="_blank" href="http://en.wikipedia.org/wiki/Aspect-oriented_programming">Aspect-oriented Programming (AOP)</a> paradigm by easing the separation of <i>cross-cutting concerns</i>
     <p>Some commonly used builtin decorators include:
         <ul>
@@ -282,12 +283,12 @@ object1 = MyClass()
 object2 = MySubClass()
 
 print object1.x
-print object1.my_staticmethod()
-print object1.my_classmethod()
+print MyClass.my_staticmethod()
+print MyClass.my_classmethod()
 
 print object2.x
-print object2.my_staticmethod()
-print object2.my_classmethod()
+print MySubClass.my_staticmethod()
+print MySubClass.my_classmethod()
 </code></pre>
 </section>
 
@@ -300,7 +301,7 @@ print object2.my_classmethod()
         <li>Error handling
         <li>Authentication
         <li>Logging
-        <li>Adding functionality to existing functions without subclassing
+        <li>Caching
     </ul>
 
     <p>
@@ -331,7 +332,7 @@ def my_function():
 # this is equivalent to
 def my_function():
     print "function payload here"
-function = shiny_decorator(my_function)
+my_function = shiny_decorator(my_function)
     </code>
     </pre>
     </p>
@@ -421,7 +422,7 @@ def my_function2():
 <pre><code>
 # coding: utf-8
 </code></pre>
-            near the top of the file (see examples/encoding.py)
+            near the top of the file (see examples/pep-8/encoding.py)
         </ul>
     </section>
 
@@ -431,7 +432,7 @@ def my_function2():
         <ul>
             <li>variables, attributes, and modules names should be lowercase, with words separated by underscores
             <li>class names should be CamelCase, aka StudlyCaps
-            <li><a target="_blank" hef="http://legacy.python.org/dev/peps/pep-0008/#constants">constants</a> should be ALL CAPS
+            <li><a target="_blank" href="http://legacy.python.org/dev/peps/pep-0008/#constants">constants</a> should be ALL CAPS
         </ul>
         <h3>Argument conventions</h3>
         <ul>
@@ -463,9 +464,26 @@ def my_function2():
             <ul>
                 <li>When in doubt make an attribute non-public
                 <li>A non-public attribute has two leading underscores and no trailing underscores, which triggers Python's name mangling
+            </ul>
+<pre><code># name mangling in action
+class Foo(object):
+    __x = 1
+    y = 1
+
+foo = Foo()
+print foo.y
+print foo.__x
+print foo._Foo__x
+</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>PEP-8 recommendations (continued)</h2>
+            <ul>
                 <li>property access should be cheap
                 <li>add public names in a module to __all__
-                <li>When comparing with singletons such as None, use "x is None", not "x == None".  
+                <li>When comparing with singletons such as None, use "x is None", not "x == None".
+            </ul>  
 <a target="_blank" href="http://jaredgrubb.blogspot.com/2009/04/python-is-none-vs-none.html">why?</a>
     </section>
 
@@ -490,7 +508,7 @@ def my_function2():
 -b, --blacklist    ignore warnings from the list of modules
 </pre></code>
         </ul> 
-        <p>Poor code example examples/Listing1.py was adapted from <a target="_blank" href="http://doughellmann.com/2008/03/01/static-code-analizers-for-python.html">Doug Hellman</a>
+        <p>Poor code example examples/pep-8/Listing1.py was adapted from <a target="_blank" href="http://doughellmann.com/2008/03/01/static-code-analizers-for-python.html">Doug Hellman</a>
         <p>What can you spot as an error, bad practice, or poor style?
         <p class="slide">Now let's see what pychecker Listing1.py has to say about it
     </section>
@@ -504,6 +522,15 @@ def my_function2():
 </pre></code>
         </ul> 
         <p class="slide">Now let's see what pylint Listing1.py has to say
+<pre>
+The message type can be:
+
+[R]efactor for a “good practice” metric violation
+[C]onvention for coding standard violation
+[W]arning for stylistic problems, or minor programming issues
+[E]rror for important programming issues (i.e. most probably bug)
+[F]atal for errors which prevented further processing
+</pre>
         <p class="slide">Note the more verbose output, but did pychecker have any information not contained in pylint?
         <p class="slide">pychecker identifies the incorrect use of self in a function
 
@@ -678,7 +705,7 @@ flake8 pylint
 <section class="slide">
     <h2>Looking at a large test suite</h2>
     <p>Django is a popular Python web framework, with an extensive test suite</p>
-    <p>Looking under the hood, it is a collection of short unit tests organized into unittest sites.</p>
+    <p>Looking under the hood, it is a collection of short unit tests organized into unittest suites.</p>
 </section>
 
 <section class="slide">
@@ -866,11 +893,12 @@ if __name__ == '__main__':
 </code></pre>
 <p>As of Python 2.6, the __main__ check is unnecessary:
 <pre><code>
-python -m doctest -v example.py
+python -m doctest -v square.py
 </pre></code>
-<p>Now generate documentation, using epydoc for example:
+<p>Now generate documentation, using epydoc or pdoc for example:
 <pre><code>
-$ epydoc example.py
+$ epydoc square.py
+$ pdoc --html square.py
 </pre></code>
 
 <p><a target="_blank" href="http://docs.python.org/2/library/doctest.html">http://docs.python.org/2/library/doctest.html</a>
@@ -900,14 +928,14 @@ $ epydoc example.py
 <section class="slide">
     <h2>Context managers via the "with" statement</h2>
     <p>Introduced in Python 2.5
-    <p>A context manager is just a class with __enter__ and __exit__ methods defined to handle setting up and tearing down the context</p>
-    <p>Provides generalizable execution contexts in which setup and teardown of context are executed no matter what happens</p>
-    <p>This allows us to separate out exception handling code</p>
-    <p>If you've been opening files using "with" (and you probably should be), you have been using context managers</p>
+    <p>If you've been opening files using "with" (and you probably should be), you have been using context managers:</p>
 <pre><code>
 with open("file.txt", "w") as f:
     f.write("foo")
 </code></pre>
+    <p>A context manager is just a class with __enter__ and __exit__ methods defined to handle setting up and tearing down the context</p>
+    <p>Provides generalizable execution contexts in which setup and teardown of context are executed no matter what happens</p>
+    <p>This allows us to separate out exception handling code</p>
 </section>
 
 <section class="slide">
