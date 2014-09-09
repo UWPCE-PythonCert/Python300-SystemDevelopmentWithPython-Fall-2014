@@ -71,6 +71,8 @@ In addition, as we work with you on your projects, we will highlight for the cla
 #### Topics 
 
 - PEP-8
+- decorators, properties, with statement
+- package management
 - Unit Testing 1
 
 ### Week 2, 9/16/2014
@@ -78,9 +80,8 @@ In addition, as we work with you on your projects, we will highlight for the cla
 (proposals due)
 #### Topics 
 - Unit Testing 2
-- Decorators
 
-### Week 3, 9/23
+### Week 3, 9/23/2014
 
 #### Topics
 Debugging
