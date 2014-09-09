@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 
-	<title>Isilon System Development with Python, Week 1</title>
+	<title>Isilon System Development with Python, Week 1 : Unit Testing</title>
 	
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="core/deck.core.css">
@@ -48,7 +48,7 @@
 <section class="slide">
     <h2>Welcome to System Development with Python</h2>
         <ul>
-            <li>Format of class will be topic lectures followed by group exercises, separated by breaks  
+            <li>Format of class will be topic lectures followed by group exercises 
             <li>The final hour will be spent working on your projects, along with code reviews later in the quarter
             <li>For credit, attend at least 8 of the 10 classes and present a project
             <li>Please sign the attendance sheet every class
@@ -110,6 +110,55 @@ python setup.py install
 </section>
 
 <section class="slide">
+    <h2>Virtualenv</h2>
+    <p>A tool to create isolated Python environments</p> 
+</section>
+
+<section class="slide">
+    <h2>Virtualenv</h2>
+    <p>Creates isolated Python environments, containing only the packages you want independent of system-wide installation
+    <p>Allows package installation without sysadmin privileges
+    <p>Locks packages at a particular release, reducing dependency conflict 
+    <p>The 'environment' created is a python interpreter and user installed libraries in a directory, with the os PATH and Python sys.path referencing that directory tree before the usual system locations
+
+    <p>Further reading</p>
+    <ul>
+        <li><a target="_blank" href="http://www.virtualenv.org/en/latest/#what-it-does">http://www.virtualenv.org/en/latest/#what-it-does</a>
+        <li><a target="_blank" href="https://pypi.python.org/pypi/virtualenv">https://pypi.python.org/pypi/virtualenv</a>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Virtualenv</h2>
+    <p>A virtualenv is just a directory tree created by the virtualenv tool
+    <p>To create a new environment and start using it:
+<pre><code>
+# Create the directory tree
+% virtualenv --distribute /path/to/your/environment
+# Enter the virtualenv
+# on unix: (maybe have to use '.' instekad of source, depending on your shell)
+% source /path/to/your/environment/bin/activate
+# Windows:
+% \path\to\env\Scripts\activate
+
+(your_virtalenv)% pip install [packages you need]
+# To exit the virtualenv, either exit the shell or call:
+(your_virtalenv)% deactivate
+</code></pre>
+
+</section>
+
+<section class="slide">
+    <h2>Virtualenv Exercise</h2>
+    <p>Install pip if you don't have it: http://pip.readthedocs.org/en/latest/installing.html</p>
+    <p>Install virtualenv if you don't have it: "pip install virtualenv"
+    <p>Initialize and enter a virtualenv</p> 
+    <p>Use pip to install 'nose', a testing package we will use later</p>
+    <p>Verify in the Python shell that you are running the version of nose from your virtualenv (Hint: what happens when you append something with '?' in ipython?)</p>
+    
+</section>
+
+<section class="slide">
     <h2>Anatomy of a Python package</h2>
     <p>The packages in PyPI come in a few flavors, but they are generally just archive files containing a structure defined by Python packaging tools. Let's look at a few of those.</p>
 </section>
@@ -137,7 +186,7 @@ python setup.py install
 </section>
 
 <section class="slide">
-    <h2>and of course, there other options</h2>
+    <h2>Other options</h2>
     <p>Distutils isn't the only package for packaging, there is also setuptools, distribute, and distutils2</p>
     <ul>
         <li><a target="_blank" href="http://docs.python.org/2/distutils/introduction.html">http://docs.python.org/2/distutils/introduction.html</a>
@@ -145,7 +194,7 @@ python setup.py install
         <li><a target="_blank" href="https://bitbucket.org/pypa/setuptools">https://bitbucket.org/pypa/setuptools</a>
         <li><a target="_blank" href="https://pypi.python.org/pypi/distribute">https://pypi.python.org/pypi/distribute</a> (A fork of setuptools.  As of August 2013, it was merged back to setuptools and discontinued)
     </ul>
-    <p>distutils is the standard, works well until you need it to get complicated.   Then look at setuptools or distutils2.
+    <p>distutils is the original standard, and works well until you need it to get complicated.   Then look at setuptools or distutils2.
  
     <h3>Further reading</h3>
     <ul>
@@ -156,8 +205,14 @@ python setup.py install
 </section>
 
 <section class="slide">
+    <h2>Packaging is an evolving ecosystem.</h2>
+    <p> <a style="text-decoration: underline" target="_blank" href="https://python-packaging-user-guide.readthedocs.org/en/latest/current.html">Here are some current recommendations.</a>This one is obselete:</p>
+<img src="images/python_comrades1.png" />
+</section>
+
+<section class="slide">
     <h2>Packaging with Distutils</h2>
-        <p>All you need is to write a setup.py script which calls the setup function imported from the packaging module of your choice
+        <p>All you need is to write a setup.py script which calls the setup function imported from the packaging module of your choice. The following example is laid out already in week-01-unit-testing/examples/distutils
 <pre><code>
 from distutils.core import setup, Extension
 
@@ -167,9 +222,7 @@ setup(
     description='Test description',
     ext_modules=[],
     py_modules=['add'],
-)
-
-</code>
+)</code>
 </pre><pre>
 <code>python setup.py build</code>
 </pre><pre>
@@ -177,62 +230,8 @@ setup(
 </pre>
 </ul>
     <p>Now your package is wrapped up in dist/, ready to distribute</p>
-    <p>Your package can be submitted to PyPI via <code>python setup.py upload</code>
-    <p><a target="_blank" href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a>
-    <p>pip finds packages via PyPI
-</section>
 
-<section class="slide">
-    <h2>Packaging is an evolving ecosystem.</h2>
-    <p> <a style="text-decoration: underline" target="_blank" href="https://python-packaging-user-guide.readthedocs.org/en/latest/current.html">Here are some current recommendations.</a>This one is obselete:</p>
-<img src="images/python_comrades1.png" />
-</section>
-
-<section class="slide">
-    <h2>Virtualenv</h2>
-    <p>A tool to create isolated Python environments</p> 
-</section>
-
-<section class="slide">
-    <h2>Virtualenv</h2>
-    <p>Creates isolated Python environments, containing only the packages you want independent of system-wide installation
-    <p>Allows package installation without sysadmin privileges
-    <p>Locks packages at a particular release, reducing dependency conflict 
-    <p>The 'environment' created is a python interpreter and user installed libraries in a directory, with the os PATH and Python sys.path referencing that directory tree before the usual system locations
-
-    <p>Further reading</p>
-    <ul>
-        <li><a target="_blank" href="http://www.virtualenv.org/en/latest/#what-it-does">http://www.virtualenv.org/en/latest/#what-it-does</a>
-        <li><a target="_blank" href="https://pypi.python.org/pypi/virtualenv">https://pypi.python.org/pypi/virtualenv</a>
-    </ul>
-</section>
-
-<section class="slide">
-    <h2>Virtualenv</h2>
-    <p>A virtualenv is just a directory tree created by the virtualenv tool
-    <p>To create a new environment and start using it:
-<pre><code>
-# Create the directory tree
-% virtualenv --distribute /path/to/your/environment
-# Enter the virtualenv
-# on unix: (maybe have to use '.' instead of source, depending on your shell)
-% source /path/to/your/environment/bin/activate
-# Windows:
-% \path\to\env\Scripts\activate
-
-(your_virtalenv)% pip install [packages you need]
-# To exit the virtualenv, either exit the shell or call:
-(your_virtalenv)% deactivate
-</code></pre>
-
-</section>
-
-<section class="slide">
-    <h2>Virtualenv Exercise</h2>
-    <p class="slide">Initialize and enter a virtualenv</p> 
-    <p class="slide">Use pip to install nose</p>
-    <p class="slide">Verify in the Python shell that you are running the version of nose from your virtualenv (Hint: what happens when you append something with '?' in ipython?)</p>
-    
+    <p class="slide">Exercise: create a new virtualenv and activate it. Install this add package into the virtualenv. Verify that you can import the module and use it.</p>
 </section>
 
 <section class="slide">
