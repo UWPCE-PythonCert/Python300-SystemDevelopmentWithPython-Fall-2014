@@ -102,6 +102,9 @@ python -m SimpleHTTPServer
     <p>Ordinarily, you'll be installing someone else's package from the standard Python package repository, <a target="_blank" href="https://pypi.python.org/pypi">PyPI (Python Package Index)</a>. Once you know the name of the package, install it with
 <pre><code>pip install packagename 
 </code></pre>
+    <p>If you don't know the name of the package, there is search:
+<pre><code>pip search search_term 
+</code></pre>
     <p>If you received a tarball distribution of the package and it is set up properly for installation, you will need to unarchive it, change into the resulting directory, and run the installer:</p>
 <pre><code>tar zxvf package.tar.gz
 cd package/
@@ -134,9 +137,9 @@ python setup.py install
     <p>To create a new environment and start using it:
 <pre><code>
 # Create the directory tree
-% virtualenv --distribute /path/to/your/environment
+% virtualenv /path/to/your/environment
 # Enter the virtualenv
-# on unix: (maybe have to use '.' instekad of source, depending on your shell)
+# on unix: (might have to use '.' instead of source, depending on your shell)
 % source /path/to/your/environment/bin/activate
 # Windows:
 % \path\to\env\Scripts\activate
