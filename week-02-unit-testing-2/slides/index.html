@@ -94,10 +94,10 @@
         <p>Interesting options:
 <pre><code>
 -d (msg ids), --disable=(msg ids)      Disable the messages identified in the messages table
+--enable=(ids)                         Enable the messages. Useful after --disable=all
 --generate-rcfile/--rcfile             Saves/restores a configuration 
 </pre></code>
         </ul> 
-        <p class="slide">Now let's see what pylint Listing1.py has to say
 <pre>
 The message type can be:
 
@@ -107,7 +107,7 @@ The message type can be:
 [E]rror for important programming issues (i.e. most probably bug)
 [F]atal for errors which prevented further processing
 </pre>
-        <p class="slide">Note the more verbose output, but did pychecker have any information not contained in pylint?
+<p class="slide">pylint --disable=all  --enable=E examples/pep-8/Listing1.py
 
 
     </section>
@@ -312,16 +312,18 @@ while True:
 <pre><code>
 import unittest
 
+import calculator_functions
+
 class TestTest(unittest.TestCase):
 
     def setUp(self):
         pass
 
     def test_add(self):
-        self.assertEqual(2+2, 4)
+        self.assertEqual(calculatorFunctions.add(2,2), 4)
 
-    def test_len(self):
-        self.assertEqual(len('foo'), 3)
+    def test_subtract(self):
+        self.assertEqual(calculatorFunctions.subtract(5,2), 3)
 
 </code></pre>
 </section>
@@ -507,10 +509,10 @@ $ pdoc --html square.py
     <h2>Exercises</h2>
     <ul>
         <li>Add unit tests for each method in calculator_functions.py
-        <li>Add fixtures via setUp/tearDown methods and setUpClass/tearDownClass class methods.  Are they behaving how you expect?
+        <li>Add fixtures (default values to test with) via setUp/tearDown methods or setUpClass/tearDownClass class methods.  
         <li>Add additional unit tests for floating point calculations
-        <li>Fix any failures in the code
-        <li>Add doctests to calculator_functions.py
+        <li>Fix any failures in the code until your floating point tests pass
+        <li>Add doctests to calculator_functions.py. Run the doctests and generate documentation
     </ul>
 </section>
 
@@ -538,17 +540,17 @@ with open("file.txt", "w") as f:
     <p>If __exit__ returns a true value, a caught exception is not re-raised
     <p>An example may clarify:
 <pre><code>
-"""A context manager for creating a temporary directory which gets destroyed on context exit"""
-import os, random, shutil
-
+import os, random, shutil, time
 
 class TemporaryDirectory(object):
+    """A context manager for creating a temporary directory which gets destroyed on context exit"""
+
     def __init__(self,directory):
         self.base_directory = directory
 
     def __enter__(self):
         # set things up
-        self.directory = self.base_directory + str(random.random()) + "/"
+        self.directory = os.path.join(self.base_directory, str(random.random()))
         os.makedirs(self.directory)
         return self.directory
 
@@ -558,10 +560,10 @@ class TemporaryDirectory(object):
 
 with TemporaryDirectory("/tmp/foo") as dir:
     # write some temp data into dir
-    with open(dir+"foo.txt", 'wb') as f:
-        import time
+    with open(os.path.join(dir, "foo.txt"), 'wb') as f:
         f.write("foo")
-        time.sleep(2)
+
+    time.sleep(5)
 </code></pre>
     <p>
         <a target="_blank" href="http://www.python.org/dev/peps/pep-0343/">http://www.python.org/dev/peps/pep-0343/</a>
@@ -572,7 +574,7 @@ with TemporaryDirectory("/tmp/foo") as dir:
     <h2>Context Manager exercise</h2>
     <p>Create a context manager which prints information on all exceptions which occur in the context and continues execution</p>
 <pre><code>
-with YourExceptionHandler() as handler:
+with YourExceptionHandler():
     print "do some stuff here"
     1/0
 

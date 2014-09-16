@@ -8,17 +8,19 @@ import string
 
 
 module_variable = 0
+unused_variable = None
 
 float = 1.0
 
 long = "loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong"        
+breakable_long_line = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1
 
 
-
-def functionName(self, int):
-    local = 5 + 5
+def functionName(self, int, unused_local=None):
     module_variable = 5*5
     return module_variable
+
+print functionName(None,None)
 
 class my_class(object):
 
@@ -27,12 +29,15 @@ class my_class(object):
         return
 
     def method1(self, str):
-        self.s = str
         return self.value
 
     def method2(self):
         return
         print 'How did we get here?'
+        
+    def method3(self):
+        self.s = str
+
     
     def method1(self):
         return self.value + 1
@@ -45,9 +50,9 @@ class my_subclass(my_class):
         return
 
 
-
 class Food(object):
     def __init__(self):
+        unused_local = None
         self.unused_data_member = None
 
 

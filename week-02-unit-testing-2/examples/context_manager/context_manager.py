@@ -1,4 +1,4 @@
-import os, random, shutil
+import os, random, shutil, time
 
 class TemporaryDirectory(object):
     def __init__(self,directory):
@@ -6,7 +6,7 @@ class TemporaryDirectory(object):
 
     def __enter__(self):
         # set things up
-        self.directory = self.base_directory + str(random.random()) + "/"
+        self.directory = os.path.join(self.base_directory, str(random.random()))
         os.makedirs(self.directory)
         return self.directory
 
@@ -16,7 +16,7 @@ class TemporaryDirectory(object):
 
 with TemporaryDirectory("/tmp/foo") as dir:
     # write some temp data into dir
-    with open(dir+"foo.txt", 'wb') as f:
-        import time
+    with open(os.path.join(dir, "foo.txt"), 'wb') as f:
         f.write("foo")
-        time.sleep(2)
+
+    time.sleep(5)
