@@ -596,10 +596,9 @@ print "should still reach this point"
 
 <section class="slide">
     <h2>Using Mock objects to test an application with service dependencies</h2>
-    <p>With an understanding of decorators, we're ready to visit Mock objects</p>
     <p>Mock objects replace real objects in your code at runtime during test</p>
     <p>This allows you to test code which calls these objects without having their actual code run</p>
-    <p>Useful for testing objects which depend on expensive resources, or resources which are unavailable during test execution</p>
+    <p>Useful for testing objects which depend on unimplemented code,  resources which are expensive, or resources which are unavailable during test execution</p>
     <p>
         <a target="_blank" href="http://www.voidspace.org.uk/python/mock">http://www.voidspace.org.uk/python/mock</a></li>
     </p>
@@ -609,23 +608,22 @@ print "should still reach this point"
     <h2>Mocks</h2>
     <p>The MagickMock class will keep track of calls to it so we can verify that the class is being called correctly, without having to execute the code underneath</p>
 <pre><code>
-# need a "fake" object for testing?   Try a MagicMock
-
 import mock
 
 mock_object = mock.MagicMock()
-
-mock_object.foo.call_count
-
+mock_object.foo.return_value = "foo return"
+print mock_object.foo.call_count
+print mock_object.foo()
+print mock_object.foo.call_count
+# raise an exception by assigning to the side_effect attribute
+mock_object.foo.side_effect = Exception
 mock_object.foo()
 
-mock_object.foo.call_count
-
 </code></pre>
-    <p>Mock objects have their own asserts, see the API documentation for a listing:</p>
+<!--     <p>Mock objects have their own asserts, see the API documentation for a listing:</p>
     <p>
-        <a href="http://www.voidspace.org.uk/python/mock/mock.html">http://www.voidspace.org.uk/python/mock/mock.html</a>
-    </p>
+        <a target="_blank" href="http://www.voidspace.org.uk/python/mock/mock.html">http://www.voidspace.org.uk/python/mock/mock.html</a>
+    </p> -->
 </section>
 
 <section class="slide">
