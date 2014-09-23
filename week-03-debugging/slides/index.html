@@ -56,11 +56,15 @@
     </section>
 
     <section class="slide">
+        <h1>The Call Stack</h1>
+    </section>
+
+    <section class="slide">
         <h2>What is the call stack?</h2>
         <ul>
         <li>The call stack is a stack data structure that stores information about the current active function call
-        <li>A stack is a Last-In-First-Out (LIFO) data structure
         <li>The objects in the stack are known as "stack frames".  Each frame contains the arguments passed to the function, space for local variables, and the return address
+        <li>A stack is a Last-In-First-Out (LIFO) data structure
         <li>When a function is called, a stack frame is created for it and pushed onto the stack
         <li>When a function returns, it is popped off the stack and control is passed to the next item in the stack.  If the stack is empty, the program exits
         </ul>
@@ -204,6 +208,14 @@ one()
 
     </section>
 
+    <section class="slide">
+    <h2>Exercise</h2>
+    <p>Modify the example program examples/wikidef
+    <p>Enforce the argument to api.Wikipedia.title to have length greater than 0
+    <p>If 0 length argument is passed to this function, raise a new exception called ZeroLengthTitleError
+    <p>Handle this exception in the caller (Not necessarily the immediate caller, which one makes sense to you?)
+    <p>Feel free to edit the code in place.  You can throw away your changes at the end with "git reset --hard", store them for later with "git stash", or commit them!
+    </section>
 
     <section class="slide">
         <h2>Further reading </h2>
@@ -251,15 +263,14 @@ one()
     <section class="slide">
         <h2>Iterators</h2>
         <p>Iterators are objects which support a concept of iteration over a collection
-    <pre><code>
-    # looping over the lines in a file is done via an iterator:
-    with open("file.dat") as f:
-        for line in f:
-            print line
+    <pre><code># looping over the lines in a file is done via an iterator:
+with open("file.dat") as f:
+    for line in f:
+        print line
 
-    # and you can create your own
-    for x in foo():
-        print x
+# and you can create your own
+for x in foo():
+    print x
     </code></pre>
         <p>An iterator is an object which follows the Python iterator protocol
         <p>An iterator defines two required methods in order to iterate
@@ -276,18 +287,19 @@ one()
     <section class="slide">
         <h2>Demonstration iterator</h2>
 <pre><code>class CountToTen(object):
-    data = range(10)
-    i = -1
+    """an iterator which returns integers from 0 to 9, inclusive"""
+
+    def __init__(self):
+        self.data = range(10)
 
     def __iter__(self):
         return self
 
     def next(self):
-        self.i += 1
-        if self.i >= len(self.data):
+        try:
+            return self.data.pop(0)
+        except IndexError:
             raise StopIteration
-        else:
-            return self.data[self.i]
 
 for x in CountToTen():
     print x
