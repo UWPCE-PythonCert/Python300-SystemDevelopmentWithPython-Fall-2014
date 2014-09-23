@@ -329,10 +329,11 @@ for x in CountToTen():
     </section>
 
     <section class="slide">
-    <h2>Sometimes there is an easier easier way, with generators</h2>
-    <pre><code>
-    count_to_10 = lambda: (i for i in range(10))
-    </code></pre>
+    <h2>Using a generator expression to create an iterator</h2>
+    <p>Python list comprehensions allow you to build lists of values</p>
+    <pre><code>my_list = [x for x in open('file.dat')]</code></pre>
+    <p>Convert that list comprehension to a generator just by replacing '[]' with '()'
+    <pre><code>my_generator = (x for x in open('file.dat'))</code></pre>
     <a target="_blank" href="https://wiki.python.org/moin/Generators">https://wiki.python.org/moin/Generators</a>
     </section>
 
