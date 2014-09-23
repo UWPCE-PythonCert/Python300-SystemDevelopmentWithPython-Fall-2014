@@ -49,6 +49,7 @@
     <section class="slide">
         <h2>Today's topics</h2>
         <ul>
+            <li>The call stack
             <li>Exceptions
             <li>Iterators
             <li>Debugging
@@ -188,23 +189,19 @@ one()
 
     <section class="slide">
     <h2> Built-in exceptions</h2>
-    <pre><code>
-    [name for name in dir(__builtin__) if "Error" in name]
-    </code></pre>
+    <pre><code>[name for name in dir(__builtin__) if "Error" in name]</code></pre>
     <p>If one of these meets your needs, by all means use it.  Else, define a new exception type by subclassing one, perhaps Exception</p>
-    <pre><code>
-    In [32]: import exceptions
-    In [33]: exceptions?
-    Type:       module
-    String Form:<module 'exceptions' (built-in)>
-    Docstring:
-    Python's standard exception class hierarchy.
+    <pre><code>In [32]: import exceptions
+In [33]: exceptions?
+Type:       module
+String Form:<module 'exceptions' (built-in)>
+Docstring:
+Python's standard exception class hierarchy.
 
-    Exceptions found here are defined both in the exceptions module and the
-    built-in namespace.  It is recommended that user-defined exceptions
-    inherit from Exception.  See the documentation for the exception
-    inheritance hierarchy.
-    </code></pre>
+Exceptions found here are defined both in the exceptions module and the
+built-in namespace.  It is recommended that user-defined exceptions
+inherit from Exception.  See the documentation for the exception
+inheritance hierarchy.</code></pre>
 
     </section>
 
@@ -212,7 +209,7 @@ one()
     <h2>Exercise</h2>
     <p>Modify the example program examples/wikidef
     <p>Enforce the argument to api.Wikipedia.title to have length greater than 0
-    <p>If 0 length argument is passed to this function, raise a new exception called ZeroLengthTitleError
+    <p>If a 0 length argument is passed to this function, raise a new exception called ZeroLengthTitleError
     <p>Handle this exception in the caller (Not necessarily the immediate caller, which one makes sense to you?)
     <p>Feel free to edit the code in place.  You can throw away your changes at the end with "git reset --hard", store them for later with "git stash", or commit them!
     </section>
@@ -270,9 +267,8 @@ with open("file.dat") as f:
 
 # and you can create your own
 for x in foo():
-    print x
-    </code></pre>
-        <p>An iterator is an object which follows the Python iterator protocol
+    print x</code></pre>
+        <p>An iterator is an object which follows the Python <a target="blank" href="https://docs.python.org/2/library/stdtypes.html#container.__iter__">iterator protocol</a>
         <p>An iterator defines two required methods in order to iterate
         <ul>
             <li>__iter__() returns the iterator itself
@@ -303,6 +299,9 @@ for x in foo():
 
 for x in CountToTen():
     print x
+
+# or consume the whole thing at once by converting to a list:
+list(CountToTen())
 </code></pre>
     </p>
     </section>
@@ -318,18 +317,22 @@ for x in CountToTen():
     </section>
 
     <section class="slide">
-    <h2>Converting a function to an iterator using the yield keyword</h2>
-    <pre><code>
-    def count_to_10():
-        for i in range(10):
-            yield i
+    <h2>generators</h2>
+    <p>A <a target="_blank" href="https://wiki.python.org/moin/Generators">generator</a> is a concrete type that implements the iterator protocol.
+    <p>Convert a function to a generator using the yield keyword</p>
+    <pre><code>def count_to_10():
+    for i in range(10):
+        yield i
+
+for x in count_to_10():
+    print x
     </code></pre>
-    <p>(3500 upvotes on this one, yield is confusing at first)</p>
+    <p>(4700 upvotes on this stackoverflow question, yield is confusing at first)</p>
     <a target="_blank" href="http://stackoverflow.com/questions/231767/the-python-yield-keyword-explained">http://stackoverflow.com/questions/231767/the-python-yield-keyword-explained</a>
     </section>
 
     <section class="slide">
-    <h2>Using a generator expression to create an iterator</h2>
+    <h2>Using a generator expression to create a generator</h2>
     <p>Python list comprehensions allow you to build lists of values</p>
     <pre><code>my_list = [x for x in open('file.dat')]</code></pre>
     <p>Convert that list comprehension to a generator just by replacing '[]' with '()'
@@ -412,17 +415,17 @@ logger = logging.getLogger('simple_example')
 logger.setLevel(logging.DEBUG)
 
 # create console handler and set level to debug
-ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
+handler = logging.StreamHandler()
+handler.setLevel(logging.DEBUG)
 
 # create formatter
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-# add formatter to ch
-ch.setFormatter(formatter)
+# add formatter to handler
+handler.setFormatter(formatter)
 
-# add ch to logger
-logger.addHandler(ch)
+# add handler to logger
+logger.addHandler(handler)
 
 # 'application' code
 logger.debug('debug message')
@@ -439,13 +442,14 @@ logger.critical('critical message')
             <ul>
                 <li>You have it already, ships with the standard library
                 <li>Easy remote debugging
+                <li>Works with any development environment
             </ul>
         </p>
         <p>Cons:
             <ul>
                 <li>Steep-ish learning curve
-                <li>Easy to get lost in the stack
-                <li>Watching variables <a target="_blank" href="http://stackoverflow.com/questions/7668979/how-do-you-watch-a-variable-in-pdb">isn't trivial</a>
+                <li>Easy to get lost in a deep stack
+                <li>Watching variables <a target="_blank" href="http://stackoverflow.com/questions/7668979/how-do-you-watch-a-variable-in-pdb">isn't hard, but non-trivial</a>
             </ul>
         </p>
     </section>
@@ -459,6 +463,7 @@ logger.critical('critical message')
                 <li>Trace mode
             </ul>
         </p>
+        <p>Note: in most cases where you see the word 'pdb' in the examples, you can replace it with 'ipdb'. ipdb is the ipython enhanced version of pdb which is mostly compatible, and generally easier to work with. But it doesn't ship with Python.</p>
     </section>
 
 
@@ -492,38 +497,62 @@ logger.critical('critical message')
     <pre><code>
     import pdb; pdb.set_trace()
     </pre></code>
-        <p>It's not always OK to modify your code in order to debug it, but this is often the quickest way to begin inspecting state
+        <p>It's not always OK/possible to modify your code in order to debug it, but this is often the quickest way to begin inspecting state
+    </section>
+
+    <section class="slide">
+        <h2>pdb in ipython</h2>
+    <pre>
+    <code>
+    In [2]: pdb
+    Automatic pdb calling has been turned ON
+
+    %run app.py
+
+    # now halts execution on uncaught exception
+
+    </code>
+    </pre>
+    <p>
+    If you forget to turn on pdb, the magic command %debug will activate the debugger (in 'post-mortem mode').
+    </p>
     </section>
 
     <section class="slide">
         <h2>Navigating pdb</h2>
         <p>The goal of each of the preceding techniques was to get to the pdb prompt and get to work inspecting state</p>
         <p>pdb survival guide</p>
-    <pre>
-    <code>
-    % python -m pdb my_sweet_app.py
-    pdb&gt; break my_sweet_app.py:4
-    pdb&gt; break 1
-    pdb&gt; clear 1
-    pdb&gt; break # list breakpoints
-    pdb&gt; list
-    pdb&gt; where # print stack trace, aliased to bt
-    pdb&gt; down # one level down the stack
-    pdb&gt; up # one level up the stack
-    pdb&gt; return # execute until function returns
-    pdb&gt; step # Execute the current line, stop at the first possible occasion
-    pdb&gt; next # Continue execution until the next line in the current function is reached or it returns.
-    pdb&gt; until # Continue execution until the line with a number greater than the current one is reached or until the current frame returns.
-    pdb&gt; continue
-
-    </code>
-    </pre>
+    <pre><code>% python -m pdb define.py robot
+pdb&gt; break api.py:21
+# list breakpoints
+pdb&gt; break
+pdb&gt; clear 1
+# print lines of code in current context
+pdb&gt; list
+# print lines in range
+pdb&gt; list 1,28
+# print stack trace, aliased to (bt, w)
+pdb&gt; where
+# move one level up the stack
+pdb&gt; up
+# move one level down the stack
+pdb&gt; down
+# execute until function returns
+pdb&gt; return
+# Execute the current line, stop at the first possible occasion
+pdb&gt; step
+# Continue execution until the next line in the current function is reached or it returns.
+pdb&gt; next
+# Continue execution until the line with a number greater than the current one is reached or until the current frame returns.  Good for exiting loops.
+pdb&gt; until
+# create commands to be executed on a breakpoint
+pdb&gt; commands
+pdb&gt; continue</code></pre>
     </section>
 
     <section class="slide">
         <h2>Breakpoints</h2>
-    <pre><code>
-pdb&gt; help break
+    <pre><code>pdb&gt; help break
 b(reak) ([file:]lineno | function) [, condition]
 With a line number argument, set a break there in the current
 file.  With a function name, set a break at first executable line
@@ -534,8 +563,7 @@ which must evaluate to true before the breakpoint is honored.
 The line number may be prefixed with a filename and a colon,
 to specify a breakpoint in another file (probably one that
 hasn't been loaded yet).  The file is searched for on sys.path;
-the .py suffix may be omitted.
-    </code></pre>
+the .py suffix may be omitted.</code></pre>
 
     <p>Clear (delete) breakpoints</p>
     <pre><code>
@@ -580,24 +608,6 @@ the .py suffix may be omitted.
     </section>
 
     <section class="slide">
-        <h2>pdb in ipython</h2>
-    <pre>
-    <code>
-    In [2]: pdb
-    Automatic pdb calling has been turned ON
-
-    %run app.py
-
-    # now halts execution on uncaught exception
-
-    </code>
-    </pre>
-    <p>
-    If you forget to turn on pdb, the magic command %debug will activate the debugger (in 'post-mortem mode').
-    </p>
-    </section>
-
-    <section class="slide">
         <h2>Eclipse</h2>
         <p>A multi-language IDE</p>
         <p>Python support via <a target="_blank" href="http://pydev.org/">http://pydev.org/</a>
@@ -634,11 +644,9 @@ the .py suffix may be omitted.
     <section class="slide">
         <h2>Debugging exercise</h2>
         <p>Find the wikidef app in the examples folder</p>
-        <p>Using one of the debugging tools, debug the app and find the server type that wikipedia is using</p>
-        <p>What's the result?    response.headers.get('server')</p>
+        <p>Using (i)pdb, debug the app and find the server type that wikipedia is using</p>
+        <p>What's the result?    Hint: check response.headers</p>
     </section>
-
-
 
 
 <section class="slide">
