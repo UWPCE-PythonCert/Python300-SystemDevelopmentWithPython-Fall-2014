@@ -18,3 +18,8 @@ class WikiDefTest(unittest.TestCase):
     def test_missing_article_failure(self):
         missing_article_title = "!!!!!-NonExistentArticle"
         self.assertRaises(ParseError, Definitions.article, missing_article_title)
+
+    def test_failing_test(self):
+        expected = 1
+        actual = 0
+        self.assertEqual(expected, actual)

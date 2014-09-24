@@ -449,7 +449,7 @@ logger.critical('critical message')
             <ul>
                 <li>Steep-ish learning curve
                 <li>Easy to get lost in a deep stack
-                <li>Watching variables <a target="_blank" href="http://stackoverflow.com/questions/7668979/how-do-you-watch-a-variable-in-pdb">isn't hard, but non-trivial</a>
+                <li>Watching variables isn't hard, but non-trivial
             </ul>
         </p>
     </section>
@@ -607,6 +607,16 @@ the .py suffix may be omitted.</code></pre>
 
     </section>
 
+    <section class="slide">
+        <h2>Invoking pdb with nose</h2>
+<p>On error condition, drop to pdb</p>
+<pre><code>nosetests --pdb
+</code></pre>
+<p>
+On test failure, drop to pdb:</p>
+<pre><code>nosetests --pdb-failures
+</code></pre>
+    </section>
     <section class="slide">
         <h2>Eclipse</h2>
         <p>A multi-language IDE</p>
