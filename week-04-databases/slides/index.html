@@ -1616,9 +1616,10 @@ $ python threaded.py</code></pre>
 <h2>
     1. Simple key-value object store</h2>
 <ul>
-       <li> <a target="_blank" href="https://docs.python.org/2/library/shelve.html">shelve</a>
-       <li> <a target="_blank" href="https://docs.python.org/2/library/anydbm.html">anydbm</a>
-       <li> Can store (almost) any Python object
+       <li> <a target="_blank" href="https://docs.python.org/2/library/shelve.html">shelve</a>,
+       based on <a target="_blank" href="https://docs.python.org/2/library/pickle.html">pickle</a>
+       and <a target="_blank" href="https://docs.python.org/2/library/anydbm.html">anydbm</a>
+       <li> Can store any <a target="_blank" href="https://docs.python.org/2/library/pickle.html#what-can-be-pickled-and-unpickled">picklable Python object</a>
        <li> Only provides storage and retrieval
 </ul>
 </section>
@@ -1692,18 +1693,17 @@ $ python threaded.py</code></pre>
 
     <h2>Other Options to Consider</h2>
 <p>
-    Redis: Advanced, Scalable  key-value store.
+    <a target="_blank" href="http://redis.io/">Redis</a>: Advanced, Scalable  key-value store.
 
-     - http://redis.io/
+
      <p>
-    Riak: High availablity/scalablity (but not so good for small)
-     - http://docs.basho.com/riak/latest/dev/taste-of-riak/python/
+    <a target="_blank" href="http://docs.basho.com/riak/latest/dev/taste-of-riak/python/">Riak</a>: High availability/scalablity
+
      <p>
-    HyperDex: "Next generation key-value store"
-     - http://hyperdex.org/
+    <a target="_blank" href="http://hyperdex.org/">HyperDex</a>: "Next generation key-value store"
+
      <p>
-    Apache Cassandra: A more schema-based NoSQL solution
-     - http://pycassa.github.io/pycassa/
+    <a target="_blank" href="http://pycassa.github.io/pycassa/">Apache Cassandra</a>: A more schema-based NoSQL solution
 
 
      </section>
