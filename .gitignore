@@ -53,3 +53,11 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+
+week-04-databases/examples/NoSQL/address_book_zodb.fs
+
+week-04-databases/examples/NoSQL/address_book_zodb.fs.index
+
+*.lock
+
+*.tmp

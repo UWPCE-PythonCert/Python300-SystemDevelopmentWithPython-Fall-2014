@@ -276,8 +276,6 @@ def create_sample():
 
     return root.address_book
 
-
-
 if __name__ == "__main__":
     address_book = create_sample()
 

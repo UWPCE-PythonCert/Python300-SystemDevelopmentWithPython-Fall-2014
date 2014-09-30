@@ -744,6 +744,18 @@ $ python setup.py install</code></pre>
           input/output parameters replaced
     </ul>
     </section>
+
+    <section class="slide">
+        <h2>placeholders</h2>
+        <p>You can do all work on the data without using placeholders by constructing the entire query by hand:
+<pre><code>
+# don't do this!
+query = "SELECT * from books where author_id = " + user_input_author
+</code></pre>
+        <p>In addition to being inefficient, this leaves you open to SQL injection attack. The placeholder mechanism will do the proper quoting and escaping to prevent abuse
+        <p>See examples/SQL/placeholders.py and examples/SQL/litte_bobby_tables.py
+    </section>
+
     <section class="slide">
 
     <h2>A Cursor - attributes</h2>
@@ -911,15 +923,12 @@ $ python setup.py install</code></pre>
     importing the sqlite3 module:
     </p>
 
-    <pre><code>
-        $ cd examples
-        $ python
-        Python 2.7.1 (r271:86832, Apr  4 2011, 22:22:40)
-        [GCC 4.2.1 (Apple Inc. build 5664)] on darwin
-        Type "help", "copyright", "credits" or "license" for more information.
-        >>> import sqlite3
-
-    </code></pre>
+    <pre><code>$ cd examples
+$ python
+Python 2.7.1 (r271:86832, Apr  4 2011, 22:22:40)
+[GCC 4.2.1 (Apple Inc. build 5664)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sqlite3</code></pre>
     </section>
     <section class="slide">
 
