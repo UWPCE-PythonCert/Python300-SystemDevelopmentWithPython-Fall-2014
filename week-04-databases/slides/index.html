@@ -1756,10 +1756,8 @@ class Something(persistent.Persistent):
     <p>See examples/NoSQL/address_book_zodb.py
 </section>
 <section class="slide">
-    <h2>Mutable Attributes</h2>
-<pre>
-
-Something.this = that
+    <h2>Mutable Attributes in ZODB</h2>
+<pre>Something.this = that
 # will trigger a DB action
 
 # But:
@@ -1768,22 +1766,18 @@ Something.a_list.append
 # will not trigger anything.
 
 # The DB doesn't know that that the list has been altered.
-
 # Solution:
 
 self.a_list = PersistentList()
-
 # (also PersistantDict() )
 
-# (or write getter and setter properties...)
-
-</pre>
+# (or write getter and setter properties...)</pre>
     </section>
     <section class="slide">
 <h2>MongoDB
     </h2>
 <p>
-    Essentially a key-value store, but the values are JSON-like objects. (Actually BSON (binary JSON) )
+    Essentially a key-value store, but the values are JSON-like objects in the <a target="_blank" href="http://bsonspec.org/">BSON (binary JSON)</a> format
 <p>
     So you can store any object that can look like JSON:
    <ul>
@@ -1828,11 +1822,9 @@ self.a_list = PersistentList()
 <p>
     Create a dir for the database:
 
-<pre><code>
-$ mkdir mongo_data
+<pre><code>$ mkdir mongo_data
 # And start it up:
-$ mongod --dbpath=mongo_data/
-</code></pre>
+$ mongod --dbpath=mongo_data/</code></pre>
     </section>
     <section class="slide">
 <h2>
@@ -1855,13 +1847,11 @@ people = store.people # creates a collection</code></pre>
     <section class="slide">
 <h2>
     Pulling Data Out</h2>
-<pre><code>
-In [16]: people.find_one({'first_name':"Fred"})
+<pre><code>In [16]: people.find_one({'first_name':"Fred"})
 Out[16]:
 {u'_id': ObjectId('534dcdcb5c84d28b596ad15e'),
  u'first_name': u'Fred',
- u'last_name': u'Jones'}
-</code></pre>
+ u'last_name': u'Jones'}</code></pre>
 <p>
     Note that it adds an ObjectID for you.
 
