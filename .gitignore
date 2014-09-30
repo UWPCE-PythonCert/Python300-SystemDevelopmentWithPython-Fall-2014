@@ -61,3 +61,7 @@ week-04-databases/examples/NoSQL/address_book_zodb.fs.index
 *.lock
 
 *.tmp
+
+*.db
+
+*.db
