@@ -78,7 +78,7 @@ def add(x,y):
 
 <section class="slide">
     <h2>Using lambda to create a closure</h2>
-    <p>The argument passed to a lambda function persists to functions that refer to the lambda function</p>
+    <p>A function may return a reference to a newly defined function</p>
     <p>This allows us to bind data to a function at runtime, creating a <a target="_blank" href="http://en.wikipedia.org/wiki/Closure_(computer_programming)">closure</a>, which is a function or reference to a function which is bound to a "referencing environment" i.e. a local scope that can be referenced later from outside that scope.
 <code>
 <pre>
@@ -170,7 +170,9 @@ attrgetter('imag')(imaginary_number)</code></pre>
         <li>sort the list first by the second character, then by the first character, in reverse.
         <li>for instance, the sorted list might contain the imaginary words (ZZfoo, ZYfoo, YZfoo, ...)
         <li>Try to use operator.itemgetter</li>
+        <!--
         <li>The file contains some words for which there is no second character.  filter() may help?
+        -->
         <li>what are the first two words in this list?</li>
     </ul>
 </section>
@@ -313,11 +315,7 @@ def add_plus_one(values=[]):
 </section>
 
 <section class="slide">
-    <h2>Not every object is serializable</h2>
-    <p>In example:
-    <p>pickle will raise PicklingError if an object <a target="_blank" href="https://docs.python.org/2/library/pickle.html#what-can-be-pickled-and-unpickled">can not be pickled</a> (see examples/unpickleable.py)
-    <p>json will raise errors if it detects circular references (see examples/json_circular.py)
-    <p>..and many more.   There's no magic serialization bullet.
+    <h1>Not every object is serializable</h1>
 </section>
 
 <section class="slide">
@@ -344,6 +342,7 @@ pickled_article = pickle.dumps(article, protocol=pickle.HIGHEST_PROTOCOL)
 reconstituted_article = pickle.loads(pickled_article)
 </pre></code>
 <p>Note that the data and code are now entwined, so this isn't highly portable
+<p>pickle will raise PicklingError if an object <a target="_blank" href="https://docs.python.org/2/library/pickle.html#what-can-be-pickled-and-unpickled">can not be pickled</a> (see examples/unpickleable.py)
 </section>
 
 <section class="slide">
@@ -364,7 +363,7 @@ json_article = json.dumps(article)
 <p>
 <code>TypeError: &lt;article.Article object at 0x105728ad0&gt; is not JSON serializable</code>
 
-<p class="slide">json will serialize a dict just fine though. Try <code>json.dumps(article.__dict__)</code>. The dictionary is portable, and can be used to initialize a new Article object on the other end:
+<p>json will serialize a dict just fine though. Try <code>json.dumps(article.__dict__)</code>. The dictionary is portable, and can be used to initialize a new Article object on the other end:
 
 <code><pre>import json
 
@@ -380,6 +379,8 @@ reconstituted_article = Article(**article_dictionary)
 
 </pre></code>
 </p>
+<p class="slide">json will raise errors if it detects circular references (see examples/json_circular.py)
+
 </section>
 
 <section class="slide">
