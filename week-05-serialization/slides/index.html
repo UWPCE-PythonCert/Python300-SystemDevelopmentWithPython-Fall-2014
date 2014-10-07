@@ -291,7 +291,9 @@ def add_plus_one(values=[]):
     <p>A good description of the issue is at <a target="_blank" href="http://effbot.org/zone/default-values.htm">http://effbot.org/zone/default-values.htm</a>
 </section>
 
-
+<section class="slide">
+    <h1>Serialization</h1>
+</section>
 <section class="slide">
     <h2>Serialization</h2>
     <p>is the process of converting data structures into a format that can be transmitted or stored
@@ -318,6 +320,67 @@ def add_plus_one(values=[]):
     <p>..and many more.   There's no magic serialization bullet.
 </section>
 
+<section class="slide">
+    <h2>Example class to serialize</h2>
+<code><pre>class Article(object):
+    def __init__(self, title=None, body=None, authors=None)
+        self.title = title
+        self.body = body
+        self.authors = authors
+</pre></code>
+</section>
+
+<section class="slide">
+    <h2>Pickle</h2>
+    <p>Serializing a simple class like this works well with pickle:
+<code><pre>
+import pickle
+
+from article import Article
+
+article = Article(title="a title", body="a body", authors=["jimi"])
+pickled_article = pickle.dumps(article, protocol=pickle.HIGHEST_PROTOCOL)
+
+reconstituted_article = pickle.loads(pickled_article)
+</pre></code>
+<p>Note that the data and code are now entwined, so this isn't highly portable
+</section>
+
+<section class="slide">
+    <h2>JSON</h2>
+    <p>The json module implements a similar API to pickle:
+<code><pre>
+import json
+
+from article import Article
+
+article = Article(title="a title", body="a body", authors=["jimi"])
+json_article = json.dumps(article)
+</pre></code>
+</section>
+<section class="slide">
+    <h2>Oops, that went boom</h2>
+
+<p>
+<code>TypeError: &lt;article.Article object at 0x105728ad0&gt; is not JSON serializable</code>
+
+<p class="slide">json will serialize a dict just fine though. Try <code>json.dumps(article.__dict__)</code>. The dictionary is portable, and can be used to initialize a new Article object on the other end:
+
+<code><pre>import json
+
+from article import Article
+
+article = Article(title="a title", body="a body", authors=["jimi"])
+json_article = json.dumps(article.__dict__)
+
+# do something with our serialized object, write to disk, send over network..
+
+article_dictionary = json.loads(json_article)
+reconstituted_article = Article(**article_dictionary)
+
+</pre></code>
+</p>
+</section>
 
 <section class="slide">
     <h2>XML</h2>
@@ -413,8 +476,8 @@ def add_plus_one(values=[]):
     <p>xml.dom.minidom.parseString(string[, parser])</p>
     <p>The optional parser argument is for passing a SAX2 parser object
     <p>You can also create a Document from scratch by calling a method on a "DOM Implementation" object:
-<pre><code>
-from xml.dom.minidom import getDOMImplementation
+
+<pre><code>from xml.dom.minidom import getDOMImplementation
 
 impl = getDOMImplementation()
 
@@ -516,13 +579,8 @@ for title in root.findall('xmlns:page/xmlns:title', namespaces=namespaces):
 </section>
 
 <section class="slide">
-    <h1>This concludes our XML overview.  Questions?</h1>
+    <h1>Questions?</h1>
 </section>
-
-<section class="slide">
-    <h2>The End</h2>
-</section>
-
 
     <!-- End slides. -->
 
