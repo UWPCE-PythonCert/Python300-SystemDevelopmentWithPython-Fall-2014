@@ -315,7 +315,7 @@ int main(int argc, char *argv[]) {
         <li><code>ruby extconf.rb</code>
         <li><code>swig -ruby add.i</code>
         <li><code>make</code>
-        <li><code>ruby -e 'require "add"; print Add.add(5,6).to_s + "\n"'</code>
+        <li><code>ruby -I. -e 'require "add"; print Add.add(5,6).to_s + "\n"'</code>
     </ul>
     <p>Further reading</p>
     <ul>
