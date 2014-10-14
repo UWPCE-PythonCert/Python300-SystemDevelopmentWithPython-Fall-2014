@@ -9,14 +9,14 @@ calls that from a def function
 cdef int c_add(int x, int y):
     """
     writing the function as a cdef -- only callable from Cython
-    
+
     use this if the function will be called from multiple places --
       removes python function call overhead.
     """
     cdef int result
-    
+
     result = x + y
-    
+
     return result
 
 

@@ -1,3 +1,3 @@
-from integrate import integrate_f
+from integrate import integrate, f
 
-print integrate_f(0.0,10.0,1000000)
+print integrate(f, 0.0,10.0,500000)
