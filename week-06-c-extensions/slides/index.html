@@ -63,15 +63,11 @@
         <li>Implement new builtin types
     </ul>
 
-    <h3>Further reading</h3>
-    <ul>
-    <li><a target="_blank" href="http://docs.python.org/2/extending/extending.html">http://docs.python.org/2/extending/extending.html</a>
-    </ul>
 </section>
 
 <section class="slide">
     <h2>Packaging your code</h2>
-    <p>Before we start building extensions, a review of building and packaging Python modules
+    <p>Before we start building extensions, a quick review of building and packaging Python modules with distutils
 
 </section>
 
@@ -88,12 +84,11 @@ setup(
     py_modules=['add'],
 )</code></pre>
 <pre>
-<code>python setup.py build</code>
+<code>python setup.py build_ext [--inplace]</code>
 </pre><pre>
-<code>python setup.py bdist</code>
+<code>python setup.py install</code>
 </pre>
 </ul>
-    <p>Now your package is wrapped up in dist/, ready to distribute</p>
 </section>
 
 <section class="slide">
@@ -119,7 +114,7 @@ int main(void) {
 <section class="slide">
     <h2>The pure C code</h2>
 
-        <p>Create a file called Makefile containing:
+        <p>examples/pure-c you'll find a Makefile containing:
 <pre><code>all: add; gcc -o add add.c</code></pre>
         <p>Now compile it:
         <p><code>% make</code>
@@ -136,7 +131,7 @@ int main(void) {
     <ul>
         <li>Good for integrating with C library functions and system calls
         <li>The API isn't trivial to learn
-        <li>Lots of opporunity for error, for instance you must do manual reference counting (<a target="_blank" href="http://docs.python.org/2/c-api/refcounting.html">http://docs.python.org/2/c-api/refcounting.html</a>)
+        <li>Lots of opportunity for error, for instance you must do manual reference counting (<a target="_blank" href="http://docs.python.org/2/c-api/refcounting.html">http://docs.python.org/2/c-api/refcounting.html</a>)
         <li>Good reference code is available in the <a target="_blank" href="http://hg.python.org/cpython/file/2145593d108d">CPython source code</a>
 
     </ul>
@@ -163,7 +158,7 @@ stdio.h, string.h, errno.h, and stdlib.h are included for you.
     <h2>Intro to the C API</h2>
     <p>Python isn't concerned with the type of arguments passed to a function, but C is
     <p>So function arguments must be parsed on the way in and the way out
-    <p>On the way in, we can call PyArg_ParseTuple
+    <p>On the way in, we can call PyArg_ParseTuple to parse the function arguments
 <pre><code>if (!PyArg_ParseTuple(args, "s", &amp;var1, ...))
     return NULL;</code></pre>
     <p><a target="_blank" href="http://docs.python.org/2/c-api/arg.html#PyArg_ParseTuple">http://docs.python.org/2/c-api/arg.html#PyArg_ParseTuple</a>
@@ -203,11 +198,11 @@ add(PyObject *self, PyObject *args)
 {
     int x;
     int y;
-    int sts;
+    int return_value;
     if (!PyArg_ParseTuple(args, "ii", &amp;x, &amp;y))
         return NULL;
-    sts = x+y;
-    return Py_BuildValue("i", sts);
+    return_value = x+y;
+    return Py_BuildValue("i", return_value);
 }
 static PyMethodDef AddMethods[] = {
     {"add", add, METH_VARARGS, "add two numbers"},
@@ -236,10 +231,13 @@ int main(int argc, char *argv[]) {
 
     <p>Now you can "import add; add.add(2,4)" from your Python code
     <p>Try it now
-    <p>Then try modifying the C code:
+</section>
+<section class="slide">
+    <h2>Exercise</h2>
+    <p>Try modifying the C code:
     <ul>
-        <li>Instead of "sts = x+y;", try returning x+y+1
-        <li>verify that your changes to the C code caused the module to return this new incorrect result
+        <li>Change input and output values to floating point numbers (hint: check the format options for <a target="_blank" href="https://docs.python.org/2/c-api/arg.html#c.PyArg_ParseTuple">PyArg_ParseTuple</a>)
+        <li>verify that your changes to the C code are working properly in your Python code
     </ul>
 </section>
 
@@ -270,7 +268,8 @@ int main(int argc, char *argv[]) {
     <p>A language agnostic tool for integrating C/C++ code with high level languages</p>
     <p>Advantages
     <ul>
-        <li>Code generation for other environments than Python.   Doesn't require modification to your C source.
+        <li>Provides code generation for languages other than Python
+        <li>Doesn't require modification to your C source
     </ul>
     <h4>Language interfaces</h4>
     <ul>
@@ -603,6 +602,7 @@ XDress is an automatic wrapper generator for C/C++ written in pure Python. Curre
 <p>Are you writing extensions from scratch? - Cython
 <p>Using C++ or Boost already? - Boost-Python
 <p>Do you want a “thick” wrapper around a C/C++ lib - Cython
+<p>Want some easy speed and can use an alternative interpreter? - try <a target="blank" href="http://pypy.org/">http://pypy.org</a>
 </section>
 
 <section class="slide">
