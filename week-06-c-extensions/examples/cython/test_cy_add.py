@@ -16,7 +16,7 @@ def test_2():
     assert cy_add.add(5, 6) == 11
 
 def test_float():
-    cy_add.add(3.3, 6.8) == 9
+    assert cy_add.add(1.1, 2.2) == 3.3
 
 
 def test_error():
