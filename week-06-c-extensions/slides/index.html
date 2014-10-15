@@ -336,6 +336,10 @@ int main(int argc, char *argv[]) {
     <ul>
         <li>Performance hit for on the fly type translation</li>
     </ul>
+    </section>
+    <section class="slide">
+    <h2>Importing Dynamic Shared Libries</h2>
+    <p>Importing dynamic shared libraries is different on Windows and Unix systems, see <a target="_blank" href="https://docs.python.org/2/library/ctypes.html#loading-dynamic-link-libraries">https://docs.python.org/2/library/ctypes.html#loading-dynamic-link-libraries</a>
 <pre><code>from ctypes import *
 add = cdll.LoadLibrary("add.so")
 print add.add(3,4)</code></pre>
@@ -435,15 +439,16 @@ Try calling other system functions with ctypes. -->
 
 <section class="slide">
     <h2>Cython</h2>
-    <p>Cython is a Python-like language
-    <p>Allows definition of static types via new keywords
-    <p>Cython code compiles down to Python extensions written in C</p>
-    <p>To type a variable, add the cdef keyword:
+    <p>Cython code is Python with a few extra keywords
+    <p>Allows definition of static types
+    <p>Cython compiles down to Python extensions written in C</p>
+    <p>To type a variable, just add the cdef keyword:
 <pre><code>def add(int x, int y):
     cdef int result=0
     result = x + y
     return result</code></pre>
 
+    <p>The allowed types are defined <a target="_blank" href="http://docs.cython.org/src/userguide/language_basics.html#language-basics">here</a>
     <p>Further reading</p>
     <ul>
         <li><a target="_blank" href="http://www.cython.org/">http://www.cython.org/</a>
@@ -504,7 +509,7 @@ has shown you that they are expensive.
 <code>def f(x):
     return x**2
 
-def integrate_f(a, b, N):
+def integrate(f, a, b, N):
     s = 0
     dx = (b-a)/N
     for i in range(N):
@@ -520,6 +525,8 @@ def integrate_f(a, b, N):
 
 <section class="slide">
     <h2>Improvements with static typing</h2>
+    <p>Find the integrate code in examples/cython/integrate
+    <p>Build it as usual and test with integrate_main.py
     <ul>
         <li>Convert the dynamically typed variables to static types and measure performance improvement before and after
         <li>Can static types and dynamic types be mixed?
@@ -560,9 +567,10 @@ def add(x, y):
 </section>
 
 <section class="slide">
-<h2>XDress</h2>
+<h2><a target="_blank" href="https://pypi.python.org/pypi/xdress/0.3">XDress</a></h2>
+<p>Cython-based, NumPy-aware automatic wrapper generation for C / C++</p>
 <p>
-XDress is an automatic wrapper generator for C/C++ written in pure Python. Currently, xdress may generate Python bindings (via Cython) for C++ classes and functions and in-memory wrappers for C++ standard library containers (sets, vectors, maps). In the future, other tools and bindings will be supported.
+ Currently, xdress may generate Python bindings (via Cython) for C++ classes and functions and in-memory wrappers for C++ standard library containers (sets, vectors, maps). In the future, other tools and bindings will be supported.
 </section>
 
 <section class="slide">
