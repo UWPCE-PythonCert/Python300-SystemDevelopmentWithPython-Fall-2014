@@ -8,16 +8,16 @@ x = 1
 def func():
     global x
     y = x
-    time.sleep(1)
     y += 1
     x = y
 
-
 threads = []
-for x in xrange(100):
+# with enough threads, there's sufficient overhead to cause a race
+# condition
+for i in xrange(10000):
     thread = threading.Thread(target=func)
-    thread.start()
     threads.append(thread)
+    thread.start()
 
 for thread in threads:
     thread.join()

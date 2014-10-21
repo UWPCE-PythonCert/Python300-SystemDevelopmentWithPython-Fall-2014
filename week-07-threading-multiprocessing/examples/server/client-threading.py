@@ -15,7 +15,7 @@ from decorators.decorators import timer
 def threading_client(number_of_requests=10):
     
     results = Queue.Queue()
-    url = "http://localhost:8080"
+    url = "http://localhost:37337"
 
     def worker(*args):
         conn = urllib2.urlopen(url)
@@ -30,7 +30,9 @@ def threading_client(number_of_requests=10):
         print "Thread %s started" % thread.name
 
     for i in xrange(number_of_requests):
-        print results.get()
+        print results.get(timeout=2)
+
+    print "made %d requests" % number_of_requests
 
 if __name__ == "__main__":
 

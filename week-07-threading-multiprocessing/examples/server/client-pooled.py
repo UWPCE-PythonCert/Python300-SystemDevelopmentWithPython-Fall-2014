@@ -16,25 +16,18 @@ from decorators.decorators import timer
 def threading_client(number_of_requests=10, thread_count=2):
     
     results = Queue.Queue()
-    url = "http://localhost:8080"
+    url = "http://localhost:37337"
 
     def worker(*args):
-        # print "Thread %s started" % threading.current_thread().name
         conn = urllib2.urlopen(url)
         result = conn.read()
         conn.close()
-        # results.put(result)
+        print result
 
     pool = ThreadPool(processes=thread_count)
     pool.map(worker, range(number_of_requests))
 
-    # for i in xrange(number_of_requests):
-        # print results.get(timeout=3)
-
 if __name__ == "__main__":
-    # TODO: get number_of_requests and thread_count from
-    # argparse
-
     number_of_requests = 100
     thread_count = 10
     threading_client(number_of_requests=number_of_requests, thread_count = thread_count)
