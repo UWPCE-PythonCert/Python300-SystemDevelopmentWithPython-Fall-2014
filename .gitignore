@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+.gitignore
+
 __pycache__/
 *.py[cod]
 
@@ -13,7 +15,7 @@ build/
 develop-eggs/
 dist/
 eggs/
-lib/
+# lib/
 lib64/
 parts/
 sdist/
