@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 
+from multiprocessing.pool import ThreadPool
 import os
 import sys
 import urllib2
-import threading, Queue
+import Queue
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-
 from decorators.decorators import timer
 
 @timer
-def threading_client(number_of_requests=10):
+def threading_client(number_of_requests=10, thread_count=2):
 
     results = Queue.Queue()
     url = "http://localhost:37337"
@@ -20,18 +20,13 @@ def threading_client(number_of_requests=10):
         result = conn.read()
         conn.close()
         results.put(result)
+        print result
 
-    for i in xrange(number_of_requests):
-        thread = threading.Thread(target=worker, args=())
-        thread.start()
-        print "Thread %s started" % thread.name
+    pool = ThreadPool(processes=thread_count)
+    pool.map(worker, range(number_of_requests))
 
-    for i in xrange(number_of_requests):
-        print results.get(timeout=2)
-
-    print "made %d requests" % number_of_requests
 
 if __name__ == "__main__":
-
     number_of_requests = 100
-    threading_client(number_of_requests=number_of_requests)
+    thread_count = 10
+    threading_client(number_of_requests=number_of_requests, thread_count = thread_count)
