@@ -1,0 +1,3503 @@
+events: Ticks
+summary: 1123
+fn=HTTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1211
+1211 0
+
+fn=<method 'rindex' of 'unicode' objects>
+0 0
+
+fn=<method 'reverse' of 'list' objects>
+0 0
+
+fn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:178
+178 0
+cfn=__next /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:182
+calls=32 182
+178 0
+
+fn=<method 'split' of 'unicode' objects>
+0 0
+
+fn=addclosehook /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:978
+978 0
+
+fn=html2text_file ./html2text.py:693
+693 0
+cfn=close ./html2text.py:291
+calls=1 291
+693 0
+cfn=__init__ ./html2text.py:242
+calls=1 242
+693 0
+cfn=feed ./html2text.py:283
+calls=2 283
+693 18
+
+fn=_parse /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:379
+379 3
+cfn=__len__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:126
+calls=225 126
+379 0
+cfn=_escape /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:257
+calls=33 257
+379 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:90
+calls=92 90
+379 0
+cfn=opengroup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:72
+calls=25 72
+379 0
+cfn=_parse_sub /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:301
+calls=46 301
+379 4
+cfn=_class_escape /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:225
+calls=43 225
+379 0
+cfn=__setitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:134
+calls=75 134
+379 0
+cfn=closegroup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:83
+calls=25 83
+379 0
+cfn=<method 'append' of 'list' objects>
+calls=192 0
+379 0
+cfn=__getitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:130
+calls=225 130
+379 0
+cfn=<ord>
+calls=230 0
+379 0
+cfn=tell /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:205
+calls=2 205
+379 0
+cfn=match /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:195
+calls=452 195
+379 0
+cfn=<len>
+calls=197 0
+379 0
+cfn=append /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:138
+calls=203 138
+379 0
+cfn=get /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:201
+calls=987 201
+379 1
+
+fn=HTTPSConnection /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1155
+1155 0
+
+fn=iscomment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:219
+219 0
+
+fn=<method 'readline' of 'cStringIO.StringO' objects>
+0 0
+
+fn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:116
+116 0
+cfn=goahead /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:140
+calls=1 140
+116 0
+
+fn=_mk_bitmap /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:258
+258 1
+cfn=<method 'append' of 'list' objects>
+calls=120 0
+258 0
+
+fn=ftpwrapper /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:854
+854 0
+
+fn=send /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:787
+787 0
+cfn=connect /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:769
+calls=1 769
+787 45
+cfn=meth /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:223
+calls=1 223
+787 0
+cfn=<hasattr>
+calls=1 0
+787 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:185
+185 0
+cfn=<setattr>
+calls=6 0
+185 0
+cfn=<getattr>
+calls=6 0
+185 0
+
+fn=Message /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:85
+85 0
+
+fn=_call_chain /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:374
+374 0
+cfn=http_open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1213
+calls=1 1213
+374 1023
+cfn=<getattr>
+calls=1 0
+374 0
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+374 0
+
+fn=<method 'tell' of 'cStringIO.StringO' objects>
+0 0
+
+fn=has_header /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:297
+297 0
+
+fn=connect /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:769
+769 0
+cfn=create_connection /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:537
+calls=1 537
+769 45
+
+fn=_compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:32
+32 1
+cfn=_compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:32
+calls=146 32
+32 4
+cfn=_simple /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:354
+calls=75 354
+32 0
+cfn=getwidth /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:140
+calls=3 140
+32 0
+cfn=<method 'append' of 'list' objects>
+calls=947 0
+32 0
+cfn=__getitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:130
+calls=341 130
+32 0
+cfn=<_sre.getlower>
+calls=7 0
+32 0
+cfn=<len>
+calls=432 0
+32 0
+cfn=_compile_charset /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:178
+calls=81 178
+32 3
+
+fn=quote /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1248
+1248 0
+cfn=<method 'rstrip' of 'str' objects>
+calls=8 0
+1248 0
+cfn=<method 'copy' of 'dict' objects>
+calls=1 0
+1248 0
+cfn=<method 'update' of 'dict' objects>
+calls=1 0
+1248 0
+
+fn=ProxyDigestAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1090
+1090 0
+
+fn=<method 'split' of '_sre.SRE_Pattern' objects>
+0 1
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py:2
+2 0
+cfn=<chr>
+calls=32 0
+2 0
+cfn=<method 'format' of 'str' objects>
+calls=32 0
+2 0
+cfn=<range>
+calls=1 0
+2 0
+cfn=JSONEncoder /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py:70
+calls=1 70
+2 0
+cfn=<method 'setdefault' of 'dict' objects>
+calls=32 0
+2 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=3 188
+2 0
+
+fn=has_data /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:242
+242 0
+
+fn=_handle_long_word /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:210
+210 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+210 0
+
+fn=__exit__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:355
+355 0
+
+fn=HTTP /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1059
+1059 0
+
+fn=_output /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:807
+807 0
+cfn=<method 'append' of 'list' objects>
+calls=5 0
+807 0
+
+fn=goahead /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:140
+140 1
+cfn=<method 'start' of '_sre.SRE_Match' objects>
+calls=304 0
+140 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=1 0
+140 0
+cfn=parse_starttag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:279
+calls=152 279
+140 7
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=1 0
+140 0
+cfn=handle_data ./html2text.py:676
+calls=187 676
+140 2
+cfn=parse_endtag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:363
+calls=149 363
+140 3
+cfn=<method 'startswith' of 'unicode' objects>
+calls=459 0
+140 0
+cfn=<len>
+calls=3 0
+140 0
+cfn=parse_comment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:169
+calls=2 169
+140 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=304 0
+140 0
+cfn=handle_charref ./html2text.py:304
+calls=1 304
+140 0
+cfn=<method 'search' of '_sre.SRE_Pattern' objects>
+calls=305 0
+140 0
+cfn=updatepos /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:49
+calls=609 49
+140 1
+
+fn=<method 'decode' of 'str' objects>
+0 0
+cfn=search_function /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/__init__.py:71
+calls=1 71
+0 1
+cfn=hex_decode /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:27
+calls=1 27
+0 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:952
+952 0
+cfn=<hasattr>
+calls=4 0
+952 0
+
+fn=getproxies /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1471
+1471 0
+cfn=getproxies_macosx_sysconf /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1457
+calls=1 1457
+1471 6
+cfn=getproxies_environment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1358
+calls=1 1358
+1471 0
+
+fn=splithost /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1081
+1081 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=2 0
+1081 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=1 0
+1081 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+1081 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+1081 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:29
+29 1
+cfn=SplitResult /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:120
+calls=1 120
+29 0
+cfn=ParseResult /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:128
+calls=1 128
+29 0
+cfn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:331
+calls=485 331
+29 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:1
+calls=1 1
+29 2
+cfn=namedtuple /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:288
+calls=2 288
+29 1
+cfn=ResultMixin /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:73
+calls=1 73
+29 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+29 0
+
+fn=onlywhite ./html2text.py:124
+124 0
+
+fn=SplitResult /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:120
+120 0
+
+fn=urlparse /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:136
+136 0
+cfn=urlsplit /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:167
+calls=1 167
+136 0
+cfn=__new__ <string>:8
+calls=1 8
+136 0
+
+fn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1168
+1168 0
+cfn=<method 'title' of 'str' objects>
+calls=3 0
+1168 0
+
+fn=HTTPErrorProcessor /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:512
+512 0
+
+fn=islast /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:209
+209 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:312
+312 0
+
+fn=<method 'pop' of 'list' objects>
+0 0
+
+fn=_is_unicode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1043
+1043 0
+cfn=<isinstance>
+calls=1 0
+1043 0
+
+fn=<method 'start' of '_sre.SRE_Match' objects>
+0 0
+
+fn=<_hashlib.openssl_sha256>
+0 0
+
+fn=__len__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:126
+126 0
+cfn=<len>
+calls=359 0
+126 0
+
+fn=<_sre.compile>
+0 0
+
+fn=_escape /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:257
+257 0
+cfn=checkgroup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:85
+calls=1 85
+257 0
+cfn=<ord>
+calls=5 0
+257 0
+cfn=<len>
+calls=5 0
+257 0
+cfn=<method 'get' of 'dict' objects>
+calls=39 0
+257 0
+
+fn=RawIOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:72
+72 0
+
+fn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:318
+318 0
+
+fn=handle_tag ./html2text.py:406
+406 3
+cfn=<method 'pop' of 'list' objects>
+calls=49 0
+406 0
+cfn=has_key ./html2text.py:17
+calls=42 17
+406 0
+cfn=hn ./html2text.py:156
+calls=312 156
+406 0
+cfn=<method 'append' of 'list' objects>
+calls=49 0
+406 0
+cfn=pbr ./html2text.py:593
+calls=60 593
+406 0
+cfn=<method 'startswith' of 'unicode' objects>
+calls=40 0
+406 0
+cfn=<len>
+calls=26 0
+406 0
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+406 0
+cfn=list_numbering_start ./html2text.py:234
+calls=9 234
+406 0
+cfn=o ./html2text.py:602
+calls=155 602
+406 0
+cfn=p ./html2text.py:596
+calls=36 596
+406 0
+
+fn=readline /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:406
+406 0
+cfn=<method 'readline' of 'cStringIO.StringO' objects>
+calls=18 0
+406 0
+cfn=<method 'tell' of 'cStringIO.StringO' objects>
+calls=22 0
+406 0
+cfn=<method 'recv' of '_socket.socket' objects>
+calls=2 0
+406 976
+cfn=<method 'seek' of 'cStringIO.StringO' objects>
+calls=40 0
+406 0
+cfn=<method 'write' of 'cStringIO.StringO' objects>
+calls=20 0
+406 0
+cfn=<method 'endswith' of 'str' objects>
+calls=18 0
+406 0
+cfn=<method 'read' of 'cStringIO.StringO' objects>
+calls=18 0
+406 0
+cfn=<cStringIO.StringIO>
+calls=20 0
+406 0
+cfn=<method 'find' of 'str' objects>
+calls=2 0
+406 0
+
+fn=<method 'expandtabs' of 'unicode' objects>
+0 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:45
+45 4
+cfn=<setattr>
+calls=14 0
+45 0
+cfn=_socketobject /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:179
+calls=1 179
+45 0
+cfn=_get_exports_list /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/os.py:35
+calls=1 35
+45 0
+cfn=<getattr>
+calls=16 0
+45 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+45 0
+cfn=<method 'extend' of 'list' objects>
+calls=1 0
+45 0
+cfn=_closedsocket /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:167
+calls=1 167
+45 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+45 0
+cfn=_fileobject /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:235
+calls=1 235
+45 0
+
+fn=do_request_ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1110
+1110 0
+cfn=has_header /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:297
+calls=2 297
+1110 0
+cfn=has_data /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:242
+calls=1 242
+1110 0
+cfn=get_host /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:261
+calls=1 261
+1110 0
+cfn=has_proxy /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:280
+calls=1 280
+1110 0
+cfn=add_unredirected_header /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:293
+calls=2 293
+1110 0
+cfn=<method 'capitalize' of 'str' objects>
+calls=1 0
+1110 0
+
+fn=handle_startendtag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:403
+403 0
+cfn=handle_starttag ./html2text.py:310
+calls=3 310
+403 0
+cfn=handle_endtag ./html2text.py:313
+calls=3 313
+403 0
+
+fn=<method 'items' of 'dict' objects>
+0 0
+
+fn=replaceEntities /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:447
+447 0
+cfn=<unichr>
+calls=252 0
+447 0
+cfn=<method 'groups' of '_sre.SRE_Match' objects>
+calls=15 0
+447 0
+cfn=<method 'iteritems' of 'dict' objects>
+calls=1 0
+447 0
+
+fn=<method 'recv' of '_socket.socket' objects>
+0 977
+
+fn=sub /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:144
+144 0
+cfn=_compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:226
+calls=196 226
+144 0
+cfn=<method 'sub' of '_sre.SRE_Pattern' objects>
+calls=196 0
+144 1
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/scanner.py:2
+2 1
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+2 2
+
+fn=IncompleteRead /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1235
+1235 0
+
+fn=ParserBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:24
+24 0
+
+fn=add_handler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:323
+323 0
+cfn=<hasattr>
+calls=9 0
+323 0
+cfn=<_bisect.insort>
+calls=8 0
+323 0
+cfn=add_parent /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:496
+calls=8 496
+323 0
+cfn=<method 'append' of 'list' objects>
+calls=14 0
+323 0
+cfn=<method 'setdefault' of 'dict' objects>
+calls=14 0
+323 0
+cfn=<method 'get' of 'dict' objects>
+calls=5 0
+323 0
+cfn=<method 'find' of 'str' objects>
+calls=90 0
+323 0
+cfn=<method 'startswith' of 'str' objects>
+calls=85 0
+323 0
+cfn=<dir>
+calls=9 0
+323 0
+
+fn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:777
+777 0
+cfn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:192
+calls=1 192
+777 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1006
+1006 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:952
+calls=1 952
+1006 0
+
+fn=__new__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:86
+86 0
+cfn=<method 'items' of 'dict' objects>
+calls=4 0
+86 0
+cfn=<genexpr> /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:89
+calls=4 89
+86 0
+cfn=<getattr>
+calls=7 0
+86 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:36
+calls=12 36
+86 0
+cfn=<built-in method __new__ of type object at 0x10d5e8588>
+calls=4 0
+86 0
+
+fn=checkgroup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:85
+85 0
+
+fn=SpooledTemporaryFile /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:501
+501 0
+
+fn=<_hashlib.openssl_sha224>
+0 0
+
+fn=getresponse /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1009
+1009 0
+cfn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:777
+calls=1 777
+1009 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:335
+calls=1 335
+1009 0
+cfn=begin /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:402
+calls=1 402
+1009 977
+
+fn=<unichr>
+0 0
+
+fn=<method 'has_key' of 'dict' objects>
+0 0
+
+fn=__next /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:182
+182 1
+cfn=<len>
+calls=2376 0
+182 0
+
+fn=__lt__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:503
+503 0
+cfn=<hasattr>
+calls=13 0
+503 0
+
+fn=http_open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1213
+1213 0
+cfn=do_open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1139
+calls=1 1139
+1213 1023
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:76
+76 4
+cfn=HTTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1211
+calls=1 1211
+76 0
+cfn=ProxyDigestAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1090
+calls=1 1090
+76 0
+cfn=HTTPErrorProcessor /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:512
+calls=1 512
+76 0
+cfn=FileHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1308
+calls=1 1308
+76 0
+cfn=AbstractDigestAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:932
+calls=1 932
+76 0
+cfn=HTTPPasswordMgrWithDefaultRealm /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:817
+calls=1 817
+76 0
+cfn=CacheFTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1420
+calls=1 1420
+76 0
+cfn=HTTPDefaultErrorHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:529
+calls=1 529
+76 0
+cfn=HTTPSHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1219
+calls=1 1219
+76 0
+cfn=FTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1360
+calls=1 1360
+76 0
+cfn=<hasattr>
+calls=1 0
+76 0
+cfn=URLError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:137
+calls=1 137
+76 0
+cfn=AbstractBasicAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:827
+calls=1 827
+76 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bisect.py:1
+calls=1 1
+76 1
+cfn=Request /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:197
+calls=1 197
+76 0
+cfn=BaseHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:493
+calls=1 493
+76 0
+cfn=HTTPCookieProcessor /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1226
+calls=1 1226
+76 0
+cfn=ProxyHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:710
+calls=1 710
+76 0
+cfn=HTTPBasicAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:890
+calls=1 890
+76 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py:55
+calls=1 55
+76 0
+cfn=OpenerDirector /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:311
+calls=1 311
+76 0
+cfn=HTTPRedirectHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:533
+calls=1 533
+76 0
+cfn=HTTPDigestAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1072
+calls=1 1072
+76 0
+cfn=AbstractHTTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1102
+calls=1 1102
+76 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:67
+calls=1 67
+76 11
+cfn=UnknownHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1244
+calls=1 1244
+76 0
+cfn=HTTPPasswordMgr /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:753
+calls=1 753
+76 0
+cfn=ProxyBasicAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:902
+calls=1 902
+76 0
+cfn=HTTPError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:150
+calls=1 150
+76 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+76 0
+
+fn=normalize_encoding /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/__init__.py:49
+49 0
+cfn=<hasattr>
+calls=1 0
+49 0
+cfn=<method 'translate' of 'str' objects>
+calls=1 0
+49 0
+cfn=<isinstance>
+calls=1 0
+49 0
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+49 0
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+49 0
+
+fn=addheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:220
+220 0
+cfn=<method 'get' of 'dict' objects>
+calls=15 0
+220 0
+
+fn=FileHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1308
+1308 0
+
+fn=_commit_removals /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:52
+52 0
+
+fn=<function seed at 0x10db15b90>
+0 0
+
+fn=<chr>
+0 0
+
+fn=UnknownTransferEncoding /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1229
+1229 0
+
+fn=<method '__subclasses__' of 'type' objects>
+0 0
+
+fn=reset /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:99
+99 0
+cfn=reset /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:37
+calls=1 37
+99 0
+
+fn=search_function /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/__init__.py:71
+71 0
+cfn=normalize_encoding /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/__init__.py:49
+calls=1 49
+71 0
+cfn=getregentry /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:70
+calls=1 70
+71 0
+cfn=<isinstance>
+calls=1 0
+71 0
+cfn=<__import__>
+calls=1 0
+71 1
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+71 0
+
+fn=AbstractDigestAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:932
+932 0
+
+fn=Definitions ./definitions.py:3
+3 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:23
+23 7
+cfn=addclosehook /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:978
+calls=1 978
+23 0
+cfn=ftpwrapper /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:854
+calls=1 854
+23 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:29
+calls=1 29
+23 6
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:45
+calls=1 45
+23 5
+cfn=FancyURLopener /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:610
+calls=1 610
+23 0
+cfn=<method 'format' of 'str' objects>
+calls=191 0
+23 0
+cfn=ContentTooShortError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:110
+calls=1 110
+23 0
+cfn=addinfo /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:993
+calls=1 993
+23 0
+cfn=addbase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:949
+calls=1 949
+23 0
+cfn=URLopener /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:116
+calls=1 116
+23 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/base64.py:3
+calls=1 3
+23 0
+cfn=<zip>
+calls=1 0
+23 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py:56
+calls=1 56
+23 0
+cfn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1203
+calls=485 1203
+23 0
+cfn=addinfourl /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1003
+calls=1 1003
+23 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+23 0
+
+fn=handle_starttag ./html2text.py:310
+310 0
+cfn=handle_tag ./html2text.py:406
+calls=152 406
+310 3
+
+fn=<_scproxy._get_proxies>
+0 6
+
+fn=request_host /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:181
+181 0
+cfn=urlparse /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:136
+calls=1 136
+181 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+181 0
+cfn=get_full_url /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:248
+calls=1 248
+181 0
+cfn=<method 'sub' of '_sre.SRE_Pattern' objects>
+calls=1 0
+181 0
+
+fn=<repr>
+0 0
+
+fn=clear_cdata_mode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:133
+133 0
+
+fn=FancyURLopener /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:610
+610 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py:99
+99 1
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py:2
+calls=1 2
+99 1
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py:101
+calls=1 101
+99 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:303
+calls=1 303
+99 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:2
+calls=1 2
+99 6
+
+fn=__exit__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:26
+26 0
+cfn=_commit_removals /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:52
+calls=8 52
+26 0
+cfn=<method 'remove' of 'set' objects>
+calls=8 0
+26 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/heapq.py:31
+31 0
+
+fn=get_host /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:261
+261 0
+cfn=splithost /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1081
+calls=1 1081
+261 0
+cfn=unquote /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1207
+calls=1 1207
+261 0
+
+fn=HTTPPasswordMgrWithDefaultRealm /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:817
+817 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py:101
+101 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:1
+1 2
+cfn=__exit__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:355
+calls=1 355
+1 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:318
+calls=1 318
+1 0
+cfn=Message /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:20
+calls=1 20
+1 0
+cfn=<thread.allocate_lock>
+calls=1 0
+1 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:71
+calls=1 71
+1 0
+cfn=__enter__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:339
+calls=1 339
+1 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:18
+calls=1 18
+1 6
+cfn=warnpy3k /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:14
+calls=1 14
+1 0
+
+fn=Message /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:20
+20 0
+
+fn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:276
+276 0
+cfn=flush /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:292
+calls=2 292
+276 0
+cfn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:518
+calls=1 518
+276 0
+
+fn=<method 'sendall' of '_socket.socket' objects>
+0 0
+
+fn=CacheFTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1420
+1420 0
+
+fn=<method 'rfind' of 'str' objects>
+0 0
+
+fn=Storage ./html2text.py:702
+702 0
+
+fn=<method 'format' of 'str' objects>
+0 0
+
+fn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:493
+493 0
+cfn=<_sre.compile>
+calls=32 0
+493 0
+cfn=<method 'items' of 'dict' objects>
+calls=32 0
+493 0
+cfn=_code /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:478
+calls=32 478
+493 7
+cfn=parse /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:675
+calls=32 675
+493 8
+cfn=isstring /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:472
+calls=32 472
+493 0
+
+fn=<method 'seek' of 'cStringIO.StringO' objects>
+0 0
+
+fn=HTTPDefaultErrorHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:529
+529 0
+
+fn=<module> ./definitions.py:1
+1 0
+cfn=Definitions ./definitions.py:3
+calls=1 3
+1 0
+cfn=<module> ./api.py:1
+calls=1 1
+1 51
+
+fn=<method 'groups' of '_sre.SRE_Match' objects>
+0 0
+
+fn=BufferedIOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:75
+75 0
+
+fn=meth /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:223
+223 0
+cfn=<method 'sendall' of '_socket.socket' objects>
+calls=1 0
+223 0
+cfn=<method 'connect' of '_socket.socket' objects>
+calls=1 0
+223 43
+cfn=<getattr>
+calls=2 0
+223 0
+
+fn=<method 'isalnum' of 'str' objects>
+0 0
+
+fn=<setattr>
+0 0
+
+fn=<method 'endswith' of 'unicode' objects>
+0 0
+
+fn=_splitnetloc /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:159
+159 0
+cfn=<len>
+calls=1 0
+159 0
+cfn=<min>
+calls=2 0
+159 0
+cfn=<method 'find' of 'str' objects>
+calls=3 0
+159 0
+
+fn=ParseResult /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:128
+128 0
+
+fn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:355
+355 0
+cfn=<method 'format' of 'str' objects>
+calls=11 0
+355 0
+
+fn=LineAndFileWrapper /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1276
+1276 0
+
+fn=SplitResult <string>:1
+1 0
+
+fn=<range>
+0 0
+
+fn=<genexpr> /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:89
+89 0
+cfn=<getattr>
+calls=5 0
+89 0
+
+fn=read /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:534
+534 0
+cfn=_read_chunked /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:579
+calls=2 579
+534 0
+
+fn=close ./html2text.py:291
+291 0
+cfn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:116
+calls=1 116
+291 0
+cfn=pbr ./html2text.py:593
+calls=1 593
+291 0
+cfn=o ./html2text.py:602
+calls=1 602
+291 0
+cfn=<method 'join' of 'unicode' objects>
+calls=1 0
+291 0
+
+fn=<globals>
+0 0
+
+fn=<built-in method fromkeys>
+0 0
+
+fn=__iter__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:58
+58 0
+cfn=__exit__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:26
+calls=8 26
+58 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:16
+calls=8 16
+58 0
+cfn=__enter__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:20
+calls=8 20
+58 0
+
+fn=<method 'connect' of '_socket.socket' objects>
+0 43
+
+fn=<method 'strip' of 'str' objects>
+0 0
+
+fn=<method 'keys' of 'dict' objects>
+0 0
+
+fn=__del__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:285
+285 0
+cfn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:276
+calls=2 276
+285 0
+
+fn=_html2text ./html2text.py:241
+241 0
+
+fn=<method 'group' of '_sre.SRE_Match' objects>
+0 0
+
+fn=UnknownProtocol /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1224
+1224 0
+
+fn=HTTPSHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1219
+1219 0
+
+fn=_read_chunked /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:579
+579 0
+cfn=readline /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:406
+calls=3 406
+579 0
+cfn=<method 'append' of 'list' objects>
+calls=2 0
+579 0
+cfn=<len>
+calls=3 0
+579 0
+cfn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:518
+calls=1 518
+579 0
+cfn=<method 'find' of 'str' objects>
+calls=2 0
+579 0
+cfn=_safe_read /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:637
+calls=3 637
+579 0
+cfn=<method 'join' of 'str' objects>
+calls=2 0
+579 0
+
+fn=_simple /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:354
+354 0
+cfn=getwidth /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:140
+calls=75 140
+354 0
+cfn=__getitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:130
+calls=68 130
+354 0
+
+fn=getregentry /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:70
+70 0
+cfn=__new__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/codecs.py:77
+calls=1 77
+70 0
+
+fn=urlencode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1294
+1294 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+1294 0
+cfn=<hasattr>
+calls=1 0
+1294 0
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+1294 0
+cfn=quote_plus /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1287
+calls=8 1287
+1294 0
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+1294 0
+
+fn=<method '__subclasshook__' of 'object' objects>
+0 0
+
+fn=IncrementalDecoder /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:57
+57 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:24
+24 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:88
+calls=1 88
+24 0
+cfn=getheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:285
+calls=2 285
+24 0
+cfn=parseplist /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:50
+calls=1 50
+24 0
+cfn=parsetype /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:33
+calls=1 33
+24 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:303
+303 0
+
+fn=<max>
+0 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:88
+88 0
+cfn=readheaders /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:234
+calls=1 234
+88 0
+
+fn=seed /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:100
+100 0
+cfn=<function seed at 0x10db15b90>
+calls=1 0
+100 0
+cfn=<binascii.hexlify>
+calls=1 0
+100 0
+cfn=<posix.urandom>
+calls=1 0
+100 0
+
+fn=<all>
+0 0
+cfn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:329
+calls=99 329
+0 0
+
+fn=<module> ./api.py:1
+1 4
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:76
+calls=1 76
+1 18
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:23
+calls=1 23
+1 20
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py:99
+calls=1 99
+1 8
+cfn=ParseError ./api.py:5
+calls=1 5
+1 0
+cfn=Wikipedia ./api.py:8
+calls=1 8
+1 0
+
+fn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:90
+90 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:40
+40 2
+cfn=Random /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:72
+calls=1 72
+40 0
+cfn=<math.exp>
+calls=1 0
+40 0
+cfn=<math.sqrt>
+calls=1 0
+40 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/__future__.py:48
+calls=1 48
+40 0
+cfn=<math.log>
+calls=2 0
+40 0
+cfn=WichmannHill /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:650
+calls=1 650
+40 0
+cfn=SystemRandom /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:800
+calls=1 800
+40 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:91
+calls=1 91
+40 0
+
+fn=ContentTooShortError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:110
+110 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:246
+246 0
+cfn=<cStringIO.StringIO>
+calls=2 0
+246 0
+
+fn=ParseResult <string>:1
+1 0
+
+fn=items /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/UserDict.py:40
+40 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+40 0
+
+fn=<method 'isdigit' of 'str' objects>
+0 0
+
+fn=reset /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:37
+37 0
+
+fn=Random /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:72
+72 0
+
+fn=_open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:414
+414 0
+cfn=_call_chain /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:374
+calls=2 374
+414 1023
+cfn=get_type /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:254
+calls=1 254
+414 0
+
+fn=<thread.allocate_lock>
+0 0
+
+fn=<math.exp>
+0 0
+
+fn=<module> /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:8
+8 0
+cfn=IncrementalDecoder /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:57
+calls=1 57
+8 0
+cfn=IncrementalEncoder /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:52
+calls=1 52
+8 0
+cfn=StreamReader /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:65
+calls=1 65
+8 0
+cfn=Codec /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:45
+calls=1 45
+8 0
+cfn=StreamWriter /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:62
+calls=1 62
+8 0
+
+fn=parse_starttag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:279
+279 2
+cfn=handle_startendtag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:403
+calls=3 403
+279 0
+cfn=handle_starttag ./html2text.py:310
+calls=149 310
+279 3
+cfn=<method 'endswith' of 'unicode' objects>
+calls=152 0
+279 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=316 0
+279 0
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=316 0
+279 0
+cfn=<method 'append' of 'list' objects>
+calls=164 0
+279 0
+cfn=<method 'strip' of 'unicode' objects>
+calls=152 0
+279 0
+cfn=check_for_whole_start_tag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:331
+calls=152 331
+279 0
+cfn=<method 'lower' of 'unicode' objects>
+calls=316 0
+279 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=468 0
+279 0
+cfn=unescape /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:444
+calls=162 444
+279 0
+
+fn=getheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:285
+285 0
+cfn=<method 'lower' of 'str' objects>
+calls=6 0
+285 0
+cfn=<method 'get' of 'dict' objects>
+calls=6 0
+285 0
+
+fn=SSLSocket /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py:100
+100 0
+
+fn=getwidth /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:140
+140 0
+cfn=<max>
+calls=25 0
+140 0
+cfn=getwidth /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:140
+calls=135 140
+140 0
+cfn=<min>
+calls=367 0
+140 0
+
+fn=has_key ./html2text.py:17
+17 0
+cfn=<method 'has_key' of 'dict' objects>
+calls=42 0
+17 0
+cfn=<hasattr>
+calls=42 0
+17 0
+
+fn=FTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1360
+1360 0
+
+fn=<method 'replace' of 'unicode' objects>
+0 0
+
+fn=ImproperConnectionState /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1249
+1249 0
+
+fn=getproxies_macosx_sysconf /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1457
+1457 0
+cfn=<_scproxy._get_proxies>
+calls=1 0
+1457 6
+
+fn=_TemporaryFileWrapper /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:372
+372 0
+
+fn=<method 'write' of 'cStringIO.StringO' objects>
+0 0
+
+fn=<math.sqrt>
+0 0
+
+fn=decode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:360
+360 0
+cfn=raw_decode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:371
+calls=1 371
+360 1
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=2 0
+360 0
+cfn=<len>
+calls=1 0
+360 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=2 0
+360 0
+
+fn=<method 'title' of 'str' objects>
+0 0
+
+fn=<hasattr>
+0 0
+
+fn=opengroup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:72
+72 0
+cfn=<method 'append' of 'list' objects>
+calls=25 0
+72 0
+
+fn=_parse_sub /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:301
+301 0
+cfn=_parse /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:379
+calls=92 379
+301 7
+cfn=__len__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:126
+calls=22 126
+301 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:90
+calls=11 90
+301 0
+cfn=<method 'append' of 'list' objects>
+calls=92 0
+301 0
+cfn=__getitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:130
+calls=30 130
+301 0
+cfn=match /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:195
+calls=138 195
+301 0
+cfn=<len>
+calls=90 0
+301 0
+cfn=append /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:138
+calls=11 138
+301 0
+
+fn=URLError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:137
+137 0
+
+fn=<_bisect.insort>
+0 0
+cfn=__lt__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:503
+calls=13 503
+0 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/__future__.py:48
+48 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/__future__.py:75
+calls=7 75
+48 0
+cfn=_Feature /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/__future__.py:74
+calls=1 74
+48 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:1
+1 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:7
+calls=1 7
+1 1
+cfn=HTMLParseError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:54
+calls=1 54
+1 0
+cfn=HTMLParser /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:72
+calls=1 72
+1 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=13 188
+1 7
+
+fn=has_proxy /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:280
+280 0
+
+fn=hn ./html2text.py:156
+156 0
+cfn=<range>
+calls=24 0
+156 0
+cfn=<len>
+calls=24 0
+156 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:199
+199 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+199 0
+cfn=request_host /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:181
+calls=1 181
+199 0
+cfn=unwrap /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1058
+calls=1 1058
+199 0
+cfn=splittag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1169
+calls=1 1169
+199 0
+
+fn=<method 'translate' of 'str' objects>
+0 0
+
+fn=<_socket.getaddrinfo>
+0 1
+
+fn=_class_escape /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:225
+225 0
+cfn=<ord>
+calls=12 0
+225 0
+cfn=<len>
+calls=30 0
+225 0
+cfn=<method 'get' of 'dict' objects>
+calls=75 0
+225 0
+cfn=get /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:201
+calls=12 201
+225 0
+
+fn=__setitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:134
+134 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:71
+71 0
+cfn=Message /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:85
+calls=1 85
+71 0
+cfn=AddressList /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:770
+calls=1 770
+71 0
+cfn=warnpy3k /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:14
+calls=1 14
+71 0
+cfn=AddrlistClass /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:496
+calls=1 496
+71 0
+
+fn=urlopen /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:123
+123 0
+cfn=build_opener /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:454
+calls=1 454
+123 7
+cfn=open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:386
+calls=1 386
+123 1024
+
+fn=<method 'rstrip' of 'str' objects>
+0 0
+
+fn=_optimize_charset /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:207
+207 1
+cfn=_mk_bitmap /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:258
+calls=15 258
+207 1
+cfn=<range>
+calls=58 0
+207 0
+cfn=fixup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:51
+calls=10 51
+207 0
+cfn=<method 'append' of 'list' objects>
+calls=205 0
+207 0
+cfn=<len>
+calls=111 0
+207 0
+cfn=_identityfunction /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:24
+calls=192 24
+207 0
+
+fn=<method 'remove' of 'set' objects>
+0 0
+
+fn=<method 'encode' of 'unicode' objects>
+0 0
+
+fn=raw_decode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:371
+371 1
+
+fn=html2text ./html2text.py:699
+699 0
+cfn=html2text_file ./html2text.py:693
+calls=1 693
+699 18
+cfn=optwrap ./html2text.py:131
+calls=1 131
+699 4
+
+fn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1157
+1157 0
+
+fn=<method 'endswith' of 'str' objects>
+0 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:95
+95 0
+cfn=reset /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:99
+calls=1 99
+95 0
+
+fn=AbstractBasicAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:827
+827 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+827 0
+
+fn=fixup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:51
+51 0
+cfn=<_sre.getlower>
+calls=20 0
+51 0
+
+fn=<module> ./define.py:3
+3 2
+cfn=<module> ./definitions.py:1
+calls=1 1
+3 52
+cfn=<method 'encode' of 'unicode' objects>
+calls=1 0
+3 0
+cfn=html2text ./html2text.py:699
+calls=1 699
+3 22
+cfn=<module> ./html2text.py:2
+calls=1 2
+3 12
+cfn=article ./definitions.py:5
+calls=1 5
+3 1033
+
+fn=<method 'end' of '_sre.SRE_Match' objects>
+0 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:335
+335 0
+cfn=makefile /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:212
+calls=1 212
+335 0
+
+fn=<isinstance>
+0 0
+
+fn=putheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:945
+945 0
+cfn=_output /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:807
+calls=4 807
+945 0
+cfn=<method 'join' of 'str' objects>
+calls=4 0
+945 0
+
+fn=HTTPResponse /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:325
+325 0
+
+fn=<method 'translate' of 'unicode' objects>
+0 0
+
+fn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:331
+331 0
+cfn=<chr>
+calls=484 0
+331 0
+
+fn=__init__ ./html2text.py:242
+242 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:95
+calls=1 95
+242 0
+
+fn=<method 'add' of 'set' objects>
+0 0
+
+fn=request /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:971
+971 0
+cfn=_send_request /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:992
+calls=1 992
+971 45
+
+fn=<issubclass>
+0 0
+cfn=__subclasscheck__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:148
+calls=8 148
+0 0
+
+fn=<math.log>
+0 0
+
+fn=_floatconstants /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:17
+17 0
+cfn=<method 'decode' of 'str' objects>
+calls=1 0
+17 1
+cfn=<_struct.unpack>
+calls=1 0
+17 0
+
+fn=<binascii.a2b_hex>
+0 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:691
+691 0
+cfn=_set_hostport /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:721
+calls=1 721
+691 0
+
+fn=__contains__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:68
+68 0
+
+fn=add_parent /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:496
+496 0
+
+fn=<method 'split' of 'str' objects>
+0 0
+
+fn=<method 'count' of 'unicode' objects>
+0 0
+
+fn=begin /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:402
+402 0
+cfn=<method 'strip' of 'str' objects>
+calls=1 0
+402 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:24
+calls=1 24
+402 0
+cfn=getheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:285
+calls=2 285
+402 0
+cfn=_check_close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:488
+calls=1 488
+402 0
+cfn=_read_status /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:363
+calls=1 363
+402 976
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+402 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+402 0
+
+fn=handle_data ./html2text.py:676
+676 0
+cfn=o ./html2text.py:602
+calls=187 602
+676 2
+
+fn=Counter /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:387
+387 0
+
+fn=_send_output /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:814
+814 0
+cfn=send /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:787
+calls=1 787
+814 45
+cfn=<isinstance>
+calls=1 0
+814 0
+cfn=<method 'extend' of 'list' objects>
+calls=1 0
+814 0
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+814 0
+
+fn=IncrementalEncoder /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:52
+52 0
+
+fn=build_opener /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:454
+454 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:312
+calls=1 312
+454 0
+cfn=add_handler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:323
+calls=9 323
+454 0
+cfn=<hasattr>
+calls=1 0
+454 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1104
+calls=2 1104
+454 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+454 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:714
+calls=1 714
+454 6
+
+fn=parse_endtag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:363
+363 0
+cfn=clear_cdata_mode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:133
+calls=149 133
+363 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=149 0
+363 0
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=149 0
+363 0
+cfn=handle_endtag ./html2text.py:313
+calls=149 313
+363 2
+cfn=<method 'lower' of 'unicode' objects>
+calls=149 0
+363 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=149 0
+363 0
+cfn=<method 'search' of '_sre.SRE_Pattern' objects>
+calls=149 0
+363 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1104
+1104 0
+
+fn=_check_close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:488
+488 0
+cfn=getheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:285
+calls=2 285
+488 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+488 0
+
+fn=_socketobject /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:179
+179 0
+
+fn=unwrap /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1058
+1058 0
+cfn=<method 'strip' of 'str' objects>
+calls=1 0
+1058 0
+
+fn=closegroup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:83
+83 0
+cfn=<method 'remove' of 'list' objects>
+calls=25 0
+83 0
+
+fn=<method 'append' of 'list' objects>
+0 0
+
+fn=BadStatusLine /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1261
+1261 0
+
+fn=http_response /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:516
+516 0
+cfn=info /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1012
+calls=1 1012
+516 0
+
+fn=<method 'iteritems' of 'dict' objects>
+0 0
+
+fn=flush /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:292
+292 0
+
+fn=_code /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:478
+478 0
+cfn=_compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:32
+calls=32 32
+478 5
+cfn=<method 'append' of 'list' objects>
+calls=32 0
+478 0
+cfn=_compile_info /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:359
+calls=32 359
+478 1
+
+fn=<method 'strip' of 'unicode' objects>
+0 0
+
+fn=__getitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:130
+130 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:90
+calls=75 90
+130 0
+cfn=<isinstance>
+calls=684 0
+130 0
+
+fn=<sys._getframe>
+0 0
+
+fn=get_method /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:231
+231 0
+cfn=has_data /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:242
+calls=1 242
+231 0
+
+fn=name2cp ./html2text.py:62
+62 0
+cfn=<hasattr>
+calls=38 0
+62 0
+
+fn=JSONDecoder /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:273
+273 0
+
+fn=HTTPConnection /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:680
+680 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:7
+7 0
+cfn=ParserBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:24
+calls=1 24
+7 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=5 188
+7 1
+
+fn=parse /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:675
+675 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:178
+calls=32 178
+675 0
+cfn=_parse_sub /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:301
+calls=32 301
+675 7
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:67
+calls=32 67
+675 0
+cfn=get /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:201
+calls=32 201
+675 0
+
+fn=__enter__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:339
+339 0
+
+fn=_compile_info /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:359
+359 0
+cfn=__len__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:126
+calls=13 126
+359 0
+cfn=getwidth /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:140
+calls=32 140
+359 0
+cfn=<method 'append' of 'list' objects>
+calls=196 0
+359 0
+cfn=__getitem__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:130
+calls=20 130
+359 0
+cfn=<len>
+calls=149 0
+359 0
+cfn=_compile_charset /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:178
+calls=6 178
+359 0
+cfn=<method 'extend' of 'list' objects>
+calls=24 0
+359 0
+
+fn=CannotSendRequest /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1252
+1252 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bisect.py:1
+1 1
+
+fn=<method 'replace' of 'str' objects>
+0 0
+
+fn=<ord>
+0 0
+
+fn=__new__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/codecs.py:77
+77 0
+cfn=<built-in method __new__ of type object at 0x10d5e8588>
+calls=1 0
+77 0
+
+fn=isstring /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:472
+472 0
+cfn=<isinstance>
+calls=64 0
+472 0
+
+fn=JSONEncoder /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py:70
+70 0
+
+fn=_get_exports_list /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/os.py:35
+35 0
+cfn=<dir>
+calls=1 0
+35 0
+
+fn=Request /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:197
+197 0
+
+fn=StreamReader /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:65
+65 0
+
+fn=addinfo /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:993
+993 0
+
+fn=BaseHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:493
+493 0
+
+fn=pbr ./html2text.py:593
+593 0
+
+fn=parseplist /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:50
+50 0
+cfn=<method 'strip' of 'str' objects>
+calls=3 0
+50 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+50 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+50 0
+cfn=<len>
+calls=1 0
+50 0
+cfn=<method 'index' of 'str' objects>
+calls=1 0
+50 0
+
+fn=<method 'setdefault' of 'dict' objects>
+0 0
+
+fn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:192
+192 0
+cfn=<setattr>
+calls=6 0
+192 0
+
+fn=HTTPException /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1213
+1213 0
+
+fn=IOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:69
+69 0
+
+fn=feed /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:107
+107 0
+cfn=goahead /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:140
+calls=2 140
+107 18
+
+fn=get_selector /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:268
+268 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:2
+2 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/scanner.py:2
+calls=1 2
+2 3
+cfn=_floatconstants /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:17
+calls=1 17
+2 1
+cfn=JSONDecoder /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:273
+calls=1 273
+2 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=2 188
+2 0
+
+fn=TextIOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:78
+78 0
+
+fn=<map>
+0 0
+
+fn=readheaders /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:234
+234 0
+cfn=iscomment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:219
+calls=16 219
+234 0
+cfn=islast /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:209
+calls=16 209
+234 0
+cfn=readline /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:406
+calls=16 406
+234 0
+cfn=addheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:220
+calls=15 220
+234 0
+cfn=<method 'strip' of 'str' objects>
+calls=15 0
+234 0
+cfn=<hasattr>
+calls=1 0
+234 0
+cfn=<method 'append' of 'list' objects>
+calls=15 0
+234 0
+cfn=<len>
+calls=31 0
+234 0
+cfn=isheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:197
+calls=15 197
+234 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+234 0
+
+fn=handle_comment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:428
+428 0
+
+fn=HTTPCookieProcessor /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1226
+1226 0
+
+fn=read /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:336
+336 0
+cfn=<method 'tell' of 'cStringIO.StringO' objects>
+calls=3 0
+336 0
+cfn=<method 'recv' of '_socket.socket' objects>
+calls=8 0
+336 0
+cfn=<method 'seek' of 'cStringIO.StringO' objects>
+calls=4 0
+336 0
+cfn=read /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:534
+calls=3 534
+336 0
+cfn=<max>
+calls=4 0
+336 0
+cfn=<method 'write' of 'cStringIO.StringO' objects>
+calls=8 0
+336 0
+cfn=<len>
+calls=8 0
+336 0
+cfn=<cStringIO.StringIO>
+calls=4 0
+336 0
+cfn=<method 'getvalue' of 'cStringIO.StringO' objects>
+calls=2 0
+336 0
+
+fn=addbase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:949
+949 0
+
+fn=handle_endtag ./html2text.py:313
+313 0
+cfn=handle_tag ./html2text.py:406
+calls=152 406
+313 1
+
+fn=create_connection /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:537
+537 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:185
+calls=1 185
+537 0
+cfn=meth /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:223
+calls=1 223
+537 43
+cfn=<_socket.getaddrinfo>
+calls=1 0
+537 1
+
+fn=urlsplit /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:167
+167 0
+cfn=_splitnetloc /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:159
+calls=1 159
+167 0
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+167 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+167 0
+cfn=<len>
+calls=1 0
+167 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+167 0
+cfn=<method 'find' of 'str' objects>
+calls=1 0
+167 0
+
+fn=<_sre.getlower>
+0 0
+
+fn=_compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:226
+226 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:493
+calls=32 493
+226 16
+cfn=<isinstance>
+calls=32 0
+226 0
+cfn=isstring /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:472
+calls=32 472
+226 0
+cfn=<len>
+calls=32 0
+226 0
+cfn=<method 'get' of 'dict' objects>
+calls=256 0
+226 0
+
+fn=tell /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:205
+205 0
+
+fn=_read_status /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:363
+363 0
+cfn=readline /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:406
+calls=1 406
+363 976
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+363 0
+cfn=<len>
+calls=1 0
+363 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+363 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:714
+714 0
+cfn=getproxies /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1471
+calls=1 1471
+714 6
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+714 0
+cfn=<hasattr>
+calls=1 0
+714 0
+
+fn=OrderedDict /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:26
+26 0
+
+fn=HTMLParseError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:54
+54 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/htmlentitydefs.py:1
+1 0
+cfn=<chr>
+calls=100 0
+1 0
+cfn=<method 'iteritems' of 'dict' objects>
+calls=1 0
+1 0
+
+fn=URLopener /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:116
+116 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:115
+115 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=28 188
+115 1
+
+fn=<method 'startswith' of 'unicode' objects>
+0 0
+
+fn=Codec /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:45
+45 0
+
+fn=ProxyHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:710
+710 0
+
+fn=<getattr>
+0 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/__future__.py:75
+75 0
+
+fn=HTTPBasicAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:890
+890 0
+
+fn=NotConnected /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1218
+1218 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/keyword.py:11
+11 0
+
+fn=<method 'lower' of 'str' objects>
+0 0
+
+fn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:16
+16 0
+
+fn=_wrap_chunks /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:243
+243 0
+cfn=<method 'reverse' of 'list' objects>
+calls=14 0
+243 0
+cfn=_handle_long_word /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:210
+calls=1 210
+243 0
+cfn=<method 'pop' of 'list' objects>
+calls=188 0
+243 0
+cfn=<method 'append' of 'list' objects>
+calls=213 0
+243 0
+cfn=<method 'strip' of 'unicode' objects>
+calls=50 0
+243 0
+cfn=<len>
+calls=235 0
+243 0
+cfn=<method 'join' of 'str' objects>
+calls=25 0
+243 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:1
+1 1
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/heapq.py:31
+calls=1 31
+1 0
+cfn=Counter /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:387
+calls=1 387
+1 0
+cfn=OrderedDict /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:26
+calls=1 26
+1 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/keyword.py:11
+calls=1 11
+1 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/base64.py:3
+3 0
+cfn=<method 'items' of 'dict' objects>
+calls=2 0
+3 0
+cfn=<chr>
+calls=256 0
+3 0
+cfn=<range>
+calls=1 0
+3 0
+cfn=<method 'sort' of 'list' objects>
+calls=1 0
+3 0
+
+fn=match /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:195
+195 0
+cfn=__next /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:182
+calls=173 182
+195 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py:55
+55 0
+cfn=<globals>
+calls=6 0
+55 0
+cfn=__get_openssl_constructor /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py:94
+calls=6 94
+55 0
+
+fn=<len>
+0 0
+cfn=__len__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:126
+calls=99 126
+0 0
+
+fn=<method 'sort' of 'list' objects>
+0 0
+
+fn=<zip>
+0 0
+
+fn=load /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py:257
+257 0
+cfn=read /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:336
+calls=1 336
+257 0
+cfn=loads /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py:293
+calls=1 293
+257 1
+
+fn=get_full_url /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:248
+248 0
+
+fn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:329
+329 0
+cfn=<method 'isalnum' of 'str' objects>
+calls=86 0
+329 0
+
+fn=LineTooLong /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1268
+1268 0
+
+fn=<__import__>
+0 0
+cfn=<module> /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:8
+calls=1 8
+0 0
+
+fn=<method 'copy' of 'dict' objects>
+0 0
+
+fn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:36
+36 0
+
+fn=charref ./html2text.py:86
+86 0
+cfn=<method 'keys' of 'dict' objects>
+calls=1 0
+86 0
+
+fn=_identityfunction /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:24
+24 0
+
+fn=_send_request /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:992
+992 0
+cfn=<built-in method fromkeys>
+calls=1 0
+992 0
+cfn=putheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:945
+calls=3 945
+992 0
+cfn=<method 'iteritems' of 'dict' objects>
+calls=1 0
+992 0
+cfn=<method 'lower' of 'str' objects>
+calls=3 0
+992 0
+cfn=putrequest /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:835
+calls=1 835
+992 0
+cfn=endheaders /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:956
+calls=1 956
+992 45
+
+fn=_Feature /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/__future__.py:74
+74 0
+
+fn=makefile /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:212
+212 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:246
+calls=1 246
+212 0
+
+fn=check_for_whole_start_tag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:331
+331 0
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=152 0
+331 0
+cfn=<method 'startswith' of 'unicode' objects>
+calls=2 0
+331 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=152 0
+331 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:34
+34 0
+cfn=RawIOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:72
+calls=1 72
+34 0
+cfn=__new__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:86
+calls=4 86
+34 0
+cfn=BufferedIOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:75
+calls=1 75
+34 0
+cfn=IOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:69
+calls=1 69
+34 0
+cfn=TextIOBase /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:78
+calls=1 78
+34 0
+cfn=register /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:105
+calls=8 105
+34 0
+
+fn=__enter__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:20
+20 0
+cfn=<method 'add' of 'set' objects>
+calls=8 0
+20 0
+
+fn=parse_comment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:169
+169 0
+cfn=<method 'start' of '_sre.SRE_Match' objects>
+calls=2 0
+169 0
+cfn=<method 'end' of '_sre.SRE_Match' objects>
+calls=2 0
+169 0
+cfn=handle_comment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:428
+calls=2 428
+169 0
+cfn=<method 'search' of '_sre.SRE_Pattern' objects>
+calls=2 0
+169 0
+
+fn=get_type /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:254
+254 0
+cfn=splittype /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1067
+calls=1 1067
+254 0
+
+fn=feed ./html2text.py:283
+283 0
+cfn=<method 'replace' of 'unicode' objects>
+calls=1 0
+283 0
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+283 0
+cfn=feed /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:107
+calls=2 107
+283 18
+
+fn=ParseError ./api.py:5
+5 0
+
+fn=<method 'lower' of 'unicode' objects>
+0 0
+
+fn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:518
+518 0
+cfn=close /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:276
+calls=1 276
+518 0
+cfn=__del__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:285
+calls=1 285
+518 0
+
+fn=<_hashlib.openssl_md5>
+0 0
+
+fn=_RandomNameSequence /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:108
+108 0
+
+fn=OpenerDirector /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:311
+311 0
+
+fn=wrap /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:316
+316 0
+cfn=_wrap_chunks /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:243
+calls=14 243
+316 0
+cfn=_munge_whitespace /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:146
+calls=14 146
+316 0
+cfn=_split /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:163
+calls=14 163
+316 1
+
+fn=WichmannHill /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:650
+650 0
+
+fn=HTTPRedirectHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:533
+533 0
+
+fn=_compile_charset /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:178
+178 0
+cfn=_optimize_charset /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:207
+calls=87 207
+178 3
+cfn=fixup /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:51
+calls=10 51
+178 0
+cfn=<method 'append' of 'list' objects>
+calls=399 0
+178 0
+cfn=_identityfunction /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_compile.py:24
+calls=102 24
+178 0
+cfn=<method 'extend' of 'list' objects>
+calls=15 0
+178 0
+
+fn=<binascii.hexlify>
+0 0
+
+fn=AddressList /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:770
+770 0
+
+fn=hex_decode /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:27
+27 0
+cfn=<binascii.a2b_hex>
+calls=1 0
+27 0
+cfn=<len>
+calls=1 0
+27 0
+
+fn=__get_openssl_constructor /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py:94
+94 0
+cfn=<_hashlib.openssl_sha256>
+calls=1 0
+94 0
+cfn=<_hashlib.openssl_sha224>
+calls=1 0
+94 0
+cfn=<getattr>
+calls=6 0
+94 0
+cfn=<_hashlib.openssl_md5>
+calls=1 0
+94 0
+cfn=<_hashlib.openssl_sha384>
+calls=1 0
+94 0
+cfn=<_hashlib.openssl_sha512>
+calls=1 0
+94 0
+cfn=<_hashlib.openssl_sha1>
+calls=1 0
+94 0
+
+fn=HTTPDigestAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1072
+1072 0
+
+fn=loads /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py:293
+293 0
+cfn=decode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py:360
+calls=1 360
+293 1
+
+fn=getproxies_environment /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1358
+1358 0
+cfn=items /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/UserDict.py:40
+calls=1 40
+1358 0
+cfn=<method 'lower' of 'str' objects>
+calls=32 0
+1358 0
+
+fn=<posix.urandom>
+0 0
+
+fn=Wikipedia ./api.py:8
+8 0
+
+fn=<method 'match' of '_sre.SRE_Pattern' objects>
+0 1
+
+fn=info /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1012
+1012 0
+
+fn=<method 'extend' of 'list' objects>
+0 0
+
+fn=putrequest /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:835
+835 0
+cfn=_output /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:807
+calls=1 807
+835 0
+cfn=putheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:945
+calls=1 945
+835 0
+
+fn=handle_charref ./html2text.py:304
+304 0
+cfn=charref ./html2text.py:86
+calls=1 86
+304 0
+cfn=o ./html2text.py:602
+calls=1 602
+304 0
+
+fn=splittag /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1169
+1169 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=1 0
+1169 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+1169 0
+
+fn=AbstractHTTPHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1102
+1102 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py:56
+56 0
+cfn=SSLSocket /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ssl.py:100
+calls=1 100
+56 0
+
+fn=wrap /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:343
+343 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:115
+calls=14 115
+343 1
+cfn=wrap /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:316
+calls=14 316
+343 2
+
+fn=_set_hostport /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:721
+721 0
+cfn=<method 'rfind' of 'str' objects>
+calls=2 0
+721 0
+
+fn=<method 'search' of '_sre.SRE_Pattern' objects>
+0 0
+
+fn=updatepos /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/markupbase.py:49
+49 0
+cfn=<method 'rindex' of 'unicode' objects>
+calls=77 0
+49 0
+cfn=<method 'count' of 'unicode' objects>
+calls=491 0
+49 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:67
+67 2
+cfn=HTTPSConnection /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1155
+calls=1 1155
+67 0
+cfn=__exit__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:355
+calls=1 355
+67 0
+cfn=HTTP /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1059
+calls=1 1059
+67 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:318
+calls=1 318
+67 0
+cfn=IncompleteRead /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1235
+calls=1 1235
+67 0
+cfn=UnknownTransferEncoding /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1229
+calls=1 1229
+67 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:1
+calls=1 1
+67 8
+cfn=LineAndFileWrapper /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1276
+calls=1 1276
+67 0
+cfn=UnknownProtocol /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1224
+calls=1 1224
+67 0
+cfn=ImproperConnectionState /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1249
+calls=1 1249
+67 0
+cfn=HTTPResponse /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:325
+calls=1 325
+67 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+67 0
+cfn=BadStatusLine /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1261
+calls=1 1261
+67 0
+cfn=HTTPConnection /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:680
+calls=1 680
+67 0
+cfn=__enter__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:339
+calls=1 339
+67 0
+cfn=CannotSendRequest /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1252
+calls=1 1252
+67 0
+cfn=HTTPException /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1213
+calls=1 1213
+67 0
+cfn=NotConnected /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1218
+calls=1 1218
+67 0
+cfn=LineTooLong /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1268
+calls=1 1268
+67 0
+cfn=CannotSendHeader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1255
+calls=1 1255
+67 0
+cfn=HTTPS /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1180
+calls=1 1180
+67 0
+cfn=UnimplementedFileMode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1232
+calls=1 1232
+67 0
+cfn=HTTPMessage /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:218
+calls=1 218
+67 0
+cfn=InvalidURL /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1221
+calls=1 1221
+67 0
+cfn=ResponseNotReady /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1258
+calls=1 1258
+67 0
+
+fn=<module> <string>:1
+1 0
+cfn=SplitResult <string>:1
+calls=1 1
+1 0
+cfn=ParseResult <string>:1
+calls=1 1
+1 0
+
+fn=CannotSendHeader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1255
+1255 0
+
+fn=__subclasscheck__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:148
+148 0
+cfn=<method '__subclasses__' of 'type' objects>
+calls=8 0
+148 0
+cfn=__iter__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:58
+calls=19 58
+148 0
+cfn=<method '__subclasshook__' of 'object' objects>
+calls=8 0
+148 0
+cfn=<issubclass>
+calls=11 0
+148 0
+cfn=__contains__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:68
+calls=9 68
+148 0
+cfn=<getattr>
+calls=8 0
+148 0
+cfn=__init__ /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:36
+calls=7 36
+148 0
+cfn=add /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:81
+calls=8 81
+148 0
+
+fn=UnknownHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1244
+1244 0
+
+fn=HTTPS /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1180
+1180 0
+
+fn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1203
+1203 0
+cfn=<chr>
+calls=484 0
+1203 0
+
+fn=unescape /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:444
+444 0
+cfn=sub /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:144
+calls=8 144
+444 0
+
+fn=StreamWriter /Users/velotron/virtualenvs/uwpce/lib/python2.7/encodings/hex_codec.py:62
+62 0
+
+fn=append /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:138
+138 0
+cfn=<method 'append' of 'list' objects>
+calls=214 0
+138 0
+
+fn=__init__ /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:67
+67 0
+
+fn=<built-in method __new__ of type object at 0x10d5e8588>
+0 0
+
+fn=<method 'read' of 'cStringIO.StringO' objects>
+0 0
+
+fn=UnimplementedFileMode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1232
+1232 0
+
+fn=HTTPPasswordMgr /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:753
+753 0
+
+fn=<_hashlib.openssl_sha384>
+0 0
+
+fn=<cStringIO.StringIO>
+0 0
+
+fn=ProxyBasicAuthHandler /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:902
+902 0
+
+fn=quote_plus /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1287
+1287 0
+cfn=quote /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1248
+calls=8 1248
+1287 0
+
+fn=SystemRandom /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:800
+800 0
+
+fn=addinfourl /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1003
+1003 0
+
+fn=<filter>
+0 0
+
+fn=HTTPMessage /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:218
+218 0
+
+fn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:18
+18 2
+cfn=SpooledTemporaryFile /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:501
+calls=1 501
+18 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:40
+calls=1 40
+18 2
+cfn=<thread.allocate_lock>
+calls=1 0
+18 0
+cfn=_TemporaryFileWrapper /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:372
+calls=1 372
+18 0
+cfn=<hasattr>
+calls=5 0
+18 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/io.py:34
+calls=1 34
+18 1
+cfn=_RandomNameSequence /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/tempfile.py:108
+calls=1 108
+18 0
+
+fn=<method 'getvalue' of 'cStringIO.StringO' objects>
+0 0
+
+fn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:91
+91 0
+cfn=seed /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/random.py:100
+calls=1 100
+91 0
+
+fn=<method 'index' of 'str' objects>
+0 0
+
+fn=register /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/abc.py:105
+105 0
+cfn=<isinstance>
+calls=8 0
+105 0
+cfn=<issubclass>
+calls=16 0
+105 0
+cfn=add /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:81
+calls=8 81
+105 0
+
+fn=<_hashlib.openssl_sha512>
+0 0
+
+fn=<method 'get' of 'dict' objects>
+0 0
+
+fn=add_unredirected_header /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:293
+293 0
+cfn=<method 'capitalize' of 'str' objects>
+calls=2 0
+293 0
+
+fn=__new__ <string>:8
+8 0
+cfn=<built-in method __new__ of type object at 0x10d5e8588>
+calls=2 0
+8 0
+
+fn=<method 'remove' of 'list' objects>
+0 0
+
+fn=InvalidURL /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1221
+1221 0
+
+fn=<_hashlib.openssl_sha1>
+0 0
+
+fn=HTMLParser /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:72
+72 0
+
+fn=<min>
+0 0
+
+fn=endheaders /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:956
+956 0
+cfn=_send_output /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:814
+calls=1 814
+956 45
+
+fn=<module> ./html2text.py:2
+2 2
+cfn=Storage ./html2text.py:702
+calls=1 702
+2 0
+cfn=<method 'keys' of 'dict' objects>
+calls=1 0
+2 0
+cfn=_html2text ./html2text.py:241
+calls=1 241
+2 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:1
+calls=1 1
+2 9
+cfn=name2cp ./html2text.py:62
+calls=38 62
+2 0
+cfn=<module> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/htmlentitydefs.py:1
+calls=1 1
+2 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+2 0
+
+fn=warnpy3k /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/warnings.py:14
+14 0
+
+fn=<method 'sub' of '_sre.SRE_Pattern' objects>
+0 0
+cfn=replaceEntities /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py:447
+calls=15 447
+0 0
+
+fn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:353
+353 0
+cfn=<method 'format' of 'str' objects>
+calls=11 0
+353 0
+
+fn=_closedsocket /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:167
+167 0
+
+fn=<method 'update' of 'dict' objects>
+0 0
+
+fn=AddrlistClass /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:496
+496 0
+
+fn=<method 'find' of 'str' objects>
+0 0
+
+fn=outtextf ./html2text.py:287
+287 0
+cfn=<method 'append' of 'list' objects>
+calls=317 0
+287 0
+
+fn=namedtuple /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:288
+288 1
+cfn=<repr>
+calls=2 0
+288 0
+cfn=<method 'format' of 'str' objects>
+calls=2 0
+288 0
+cfn=<all>
+calls=13 0
+288 0
+cfn=<method 'isdigit' of 'str' objects>
+calls=13 0
+288 0
+cfn=<isinstance>
+calls=2 0
+288 0
+cfn=<method 'add' of 'set' objects>
+calls=11 0
+288 0
+cfn=<method 'split' of 'str' objects>
+calls=2 0
+288 0
+cfn=<sys._getframe>
+calls=2 0
+288 0
+cfn=<method 'replace' of 'str' objects>
+calls=4 0
+288 0
+cfn=<map>
+calls=2 0
+288 0
+cfn=<len>
+calls=2 0
+288 0
+cfn=<module> <string>:1
+calls=1 1
+288 0
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+288 0
+cfn=<method '__contains__' of 'frozenset' objects>
+calls=13 0
+288 0
+cfn=<method 'startswith' of 'str' objects>
+calls=11 0
+288 0
+cfn=<method 'join' of 'str' objects>
+calls=4 0
+288 0
+
+fn=article ./api.py:13
+13 0
+cfn=urlencode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1294
+calls=1 1294
+13 0
+cfn=urlopen /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:123
+calls=1 123
+13 1031
+cfn=load /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py:257
+calls=1 257
+13 2
+
+fn=<method '__contains__' of 'frozenset' objects>
+0 0
+
+fn=add /Users/velotron/virtualenvs/uwpce/bin/../lib/python2.7/_weakrefset.py:81
+81 0
+cfn=<method 'add' of 'set' objects>
+calls=16 0
+81 0
+
+fn=isheader /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/rfc822.py:197
+197 0
+cfn=<method 'lower' of 'str' objects>
+calls=15 0
+197 0
+cfn=<method 'find' of 'str' objects>
+calls=15 0
+197 0
+
+fn=set_debuglevel /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:741
+741 0
+
+fn=ResultMixin /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urlparse.py:73
+73 0
+
+fn=list_numbering_start ./html2text.py:234
+234 0
+
+fn=_munge_whitespace /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:146
+146 0
+cfn=<method 'expandtabs' of 'unicode' objects>
+calls=14 0
+146 0
+cfn=<isinstance>
+calls=28 0
+146 0
+cfn=<method 'translate' of 'unicode' objects>
+calls=14 0
+146 0
+
+fn=_safe_read /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:637
+637 0
+cfn=<method 'append' of 'list' objects>
+calls=3 0
+637 0
+cfn=read /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:336
+calls=3 336
+637 0
+cfn=<len>
+calls=3 0
+637 0
+cfn=<min>
+calls=3 0
+637 0
+cfn=<method 'join' of 'str' objects>
+calls=3 0
+637 0
+
+fn=o ./html2text.py:602
+602 1
+cfn=sub /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:144
+calls=188 144
+602 1
+cfn=outtextf ./html2text.py:287
+calls=317 287
+602 0
+
+fn=<method 'startswith' of 'str' objects>
+0 0
+
+fn=optwrap ./html2text.py:131
+131 0
+cfn=<method 'split' of 'unicode' objects>
+calls=1 0
+131 0
+cfn=onlywhite ./html2text.py:124
+calls=26 124
+131 0
+cfn=<len>
+calls=59 0
+131 0
+cfn=wrap /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:343
+calls=14 343
+131 3
+
+fn=HTTPError /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:150
+150 0
+
+fn=p ./html2text.py:596
+596 0
+
+fn=article ./definitions.py:5
+5 0
+cfn=__del__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:285
+calls=1 285
+5 0
+cfn=article ./api.py:13
+calls=1 13
+5 1033
+
+fn=<dir>
+0 0
+
+fn=_fileobject /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:235
+235 0
+
+fn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+188 0
+cfn=_compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:226
+calls=60 226
+188 16
+
+fn=_split /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/textwrap.py:163
+163 0
+cfn=<method 'split' of '_sre.SRE_Pattern' objects>
+calls=14 0
+163 1
+cfn=<isinstance>
+calls=14 0
+163 0
+cfn=<filter>
+calls=14 0
+163 0
+
+fn=parsetype /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/mimetools.py:33
+33 0
+cfn=<range>
+calls=1 0
+33 0
+cfn=<method 'strip' of 'str' objects>
+calls=2 0
+33 0
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+33 0
+cfn=<method 'lower' of 'str' objects>
+calls=2 0
+33 0
+cfn=<len>
+calls=1 0
+33 0
+cfn=<method 'index' of 'str' objects>
+calls=1 0
+33 0
+cfn=<method 'join' of 'str' objects>
+calls=2 0
+33 0
+
+fn=splittype /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1067
+1067 0
+cfn=<method 'group' of '_sre.SRE_Match' objects>
+calls=1 0
+1067 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+1067 0
+cfn=<len>
+calls=1 0
+1067 0
+cfn=<method 'match' of '_sre.SRE_Pattern' objects>
+calls=1 0
+1067 0
+cfn=compile /Users/velotron/virtualenvs/uwpce/lib/python2.7/re.py:188
+calls=1 188
+1067 0
+
+fn=<method 'join' of 'str' objects>
+0 0
+cfn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:355
+calls=13 355
+0 0
+cfn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/collections.py:353
+calls=13 353
+0 0
+
+fn=get /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:201
+201 0
+cfn=__next /Users/velotron/virtualenvs/uwpce/lib/python2.7/sre_parse.py:182
+calls=1031 182
+201 1
+
+fn=open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:386
+386 0
+cfn=do_request_ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1110
+calls=1 1110
+386 0
+cfn=_open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:414
+calls=1 414
+386 1023
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:199
+calls=1 199
+386 0
+cfn=<isinstance>
+calls=1 0
+386 0
+cfn=http_response /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:516
+calls=1 516
+386 0
+cfn=<getattr>
+calls=2 0
+386 0
+cfn=get_type /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:254
+calls=1 254
+386 0
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+386 0
+
+fn=ResponseNotReady /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1258
+1258 0
+
+fn=<_struct.unpack>
+0 0
+
+fn=<method 'join' of 'unicode' objects>
+0 0
+
+fn=unquote /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1207
+1207 0
+cfn=_is_unicode /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1043
+calls=1 1043
+1207 0
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+1207 0
+cfn=<len>
+calls=1 0
+1207 0
+
+fn=do_open /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1139
+1139 0
+cfn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1168
+calls=4 1168
+1139 0
+cfn=<method 'items' of 'dict' objects>
+calls=2 0
+1139 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py:1006
+calls=1 1006
+1139 0
+cfn=getresponse /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:1009
+calls=1 1009
+1139 977
+cfn=get_host /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:261
+calls=1 261
+1139 0
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py:246
+calls=1 246
+1139 0
+cfn=<genexpr> /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:1157
+calls=1 1157
+1139 0
+cfn=request /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:971
+calls=1 971
+1139 45
+cfn=__init__ /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:691
+calls=1 691
+1139 0
+cfn=get_method /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:231
+calls=1 231
+1139 0
+cfn=get_selector /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:268
+calls=1 268
+1139 0
+cfn=get_full_url /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py:248
+calls=1 248
+1139 0
+cfn=<method 'update' of 'dict' objects>
+calls=1 0
+1139 0
+cfn=set_debuglevel /usr/local/Cellar/python/2.7.6_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py:741
+calls=1 741
+1139 0
+
+fn=<method 'capitalize' of 'str' objects>
+0 0
+
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0 0
+
