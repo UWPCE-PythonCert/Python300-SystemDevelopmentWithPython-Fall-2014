@@ -51,6 +51,13 @@
         </section>
 
         <section class="slide">
+            <h2>First let's get your virtualenv ready</h2>
+            <p>We're going to be using the Numpy package later. If you don't have it installed, try installing it in the background now as it may take some time to compile on your system.
+            <p>It should be as easy as running this from your virtualenv: <pre>$ pip install numpy</pre>
+            <p>If you're having trouble, I can help at the break
+        </section>
+
+        <section class="slide">
             <h2>What is software profiling?</h2>
             <p>The act of using instrumentation to objectively measure the performance of your application
             <p>"Performance" can be a measure of any of the following:
@@ -60,7 +67,7 @@
                     <li>wall clock execution time of part or all of your application
                 </ul>
             <p>Collecting this data involves instrumentating the code.  In Python, this happens at runtime.
-            <p>The instrumentation creates overhead, it will affect performance
+            <p>The instrumentation creates overhead, so it has a performance cost
             <p>The output data (a "profile") will be a statistical summary of the execution of functions
         </section>
 
@@ -108,8 +115,8 @@
 
         <section class="slide">
             <h2>Big O notation</h2>
+            <img width="90%" src="img/big_o.png" />
             <p>chart generated with examples/notebooks/Big_O.ipynb :
-            <img width="80%" src="img/big_o.png" />
         </section>
 
         <section class="slide">
@@ -500,13 +507,13 @@ hp.heap()
             <p>
             <ul>
                 <li>Overhead in function/method runtime lookup can be significant for small frequent calls.
-                <li>inlining code or caching function references might help
+                <li>inlining code or caching function references might help.
                 See examples/data_aggregation/agg.py
                 <li>Python string handling idioms: use "".join(list_of_strings) rather than sequential calls to +=
                  See examples/strings/str_concat.py and str_comprehensions.py
                 <li>using list comprehensions, generator expressions, or map() instead of for loops can be faster (see data_aggregation/loops.py)
-                <li>Rewrite expensive code in C (or Cython!)
-                <li>Leverage existing domain specific C extension libraries, for instance Numpy for fast array operations. See examples/numpy/matrix.py
+                <li>Rewrite expensive code as C modules. Use ctypes, Cython, SWIG, ...
+                <li>Leverage existing domain specific C extension libraries, for instance Numpy for fast array operations.
             </ul>
             <p>
             <a target="_blank" href="http://wiki.python.org/moin/PythonSpeed/PerformanceTips/">http://wiki.python.org/moin/PythonSpeed/PerformanceTips/</a>
@@ -514,13 +521,72 @@ hp.heap()
         </section>
 
         <section class="slide">
+            <h2>Numpy</h2>
+            <h3>A fast array library</h3>
+            <p>Numpy provides mechanisms to create and manipulate large arrays in C with a Pythonic interface
+            <p>Advantages:
+            <ul>
+            <li>Faster
+            <li>Less memory
+            <li><a target="_blank" href="http://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html">Data typing</a>
+            <li>N-d array slicing
+            <li>Vector operations
+            </ul>
+            <p>Many projects involving gridded data use numpy arrays:
+            <ul>
+                <li>PyOpenGL
+                <li>GDAL (Geospatial Data Abstraction Library)
+                <li>NetCDF4 (file format for large gridded data sets)
+                <li>Shapely (for GIS work)
+                <li>PIL (Python Image Library)
+            </ul>
+
+        </section>
+
+        <section class="slide">
+            <h2>Numpy</h2>
+            <p>Numpy arrays can be created by passing a sequence to numpy.array(), or generated from scratch
+            with methods like zeros(), empty(), arange(), ...
+            <p>Numpy arrays can share data
+            <p>Creating a slice of an array generates a reference to that slice, it does not
+            copy the data, saving memory and improving performance
+            <pre><code>import numpy
+# create a 2D array
+x = numpy.array(((1,2,3), (4,5,6), (7,8,9)))
+# take a vertical slice
+y = x[:,1]
+# changing a value in x..
+x[0][1] = 99
+# changes the value in y
+print y[0]
+            </code></pre>
+            <p>Fast serialization with numpy.tofile() / numpy.fromfile() – Just the raw bytes, no metadata
+        </section>
+
+        <section class="slide">
+            <h2>Numpy</h2>
+            <p>Operations on a numpy array</p>
+            <p>Broadcasting: specifies an operation to broadcast across the array.  e.g.
+            <code>my_array*3</code> will broadcast the (*3) operation on each element, at the C level, not the Python level.
+            <p>See examples/numpy/matrix.py
+            <p>Numpy has a <a target="_blank" href="http://docs.scipy.org/doc/numpy/reference/routines.html">large number of methods</a> for operating on the arrays, for slicing, vector calculations, and statistics
+        </section>
+
+        <section class="slide">
+            <h2>Exercise</h2>
+            <p>examples/numpy/images.py contains a script to manipulate an image's pixel data with numpy
+            <p>Before saving a new copy of the image, mirror the image either horizontally or vertically
+        </section>
+
+
+        <section class="slide">
             <h2>Managing memory</h2>
             <p>Don’t forget memory:
             <p>Processors are fast
-            <p>It often takes longer to push the memory around than do the computation
+            <p>It can take longer to push the memory around than do the computation
             <p>So keep in in mind for big data sets:
-            <p>Use efficient data structures: array.array, numpy
-            <p>Use efficient algorithms ( O(log n) )
+            <p>Use the right data structures
+            <p>Use efficient algorithms
             <p>Use generators, rather than lists: xrange, ...
             <p>Use iterators to pull in the data you need from databases, sockets, files, ...
         </section>
