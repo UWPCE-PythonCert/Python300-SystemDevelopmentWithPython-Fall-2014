@@ -414,6 +414,25 @@ pyprof2calltree -i dump.profile -o dump.callgrind</code>
         <a target="_blank" href="http://kcachegrind.sourceforge.net/cgi-bin/show.cgi/KcacheGrindCalltreeFormat">http://kcachegrind.sourceforge.net/cgi-bin/show.cgi/KcacheGrindCalltreeFormat</a>
         </section>
 
+    <section class="slide">
+        <h2>Profiling C extensions</h2>
+        <p>Google Performance Tools can be used to profile C extensions
+        <p>Just call ProfilerStart and ProfilerStop with ctypes around the code you want to profile
+<pre><code>import ctypes
+
+libprof = ctypes.CDLL('/usr/local/lib/libprofiler.0.dylib')
+libprof.ProfilerStart('/tmp/out.prof')
+import numpy
+a=numpy.linspace(0,100)
+a*=32432432
+libprof.ProfilerStop('/tmp/out.prof')
+</code></pre>
+<pre># convert the profile to qcachegrind's format with google's pprof tool
+$ pprof --callgrind  ~/virtualenvs/uwpce/lib/python2.7/site-packages/numpy/core/multiarray.so out.prof > output.callgrind
+$ qcachegrind output.callgrind
+</pre>
+    </section>
+
         <section class="slide">
             <h2>Run Snake Run</h2>
             <p>A graphical profile viewer for Python
