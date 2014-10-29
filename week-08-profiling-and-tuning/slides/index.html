@@ -124,7 +124,7 @@
             <p>One way to measure performance is with a stopwatch.
             <p>Start the clock when a unit of code such as a function begins, and stop it when the code returns
             <p>This is a the simplest method, and we can instrument our code to start and stop the clock.
-            <p>The data obtained is valid only for the particular test environment (machine/OS/Python version..)
+            <p>Like most timing benchmarks, data obtained is valid only for the particular test environment (machine/OS/Python version..)
             <p>Relative timings may be valid across systems, but can also diverge
             <p>For instance a run on a machine with fast network and slow disk may produce much different results on a system with slow network and fast disk
         </section>
@@ -132,6 +132,9 @@
         <section class="slide">
             <h2>time.clock() / time.time()</h2>
             <p>Using the time module as a profiling decorator</p>
+            <p>time.time() returns the unix system time (wall clock time)
+            <p>time.clock() returns the CPU time of the current process
+            <p>Precision is system dependent
             <p>See examples/timer/timer_test.py</p>
             <pre><code>import time
 
@@ -203,7 +206,8 @@ setup_code = """text = "sample string";char = "g" """
 timeit.timeit(statement, setup=setup_code)</code></pre>
         </section>
         <section class="slide">
-            <h2>Or with iPython magic</h2>
+            <h2>timeit via iPython magic</h2>
+            <p>Note that the code is passed without quoting it
             <p>
         <pre><code>%timeit pass
 
@@ -238,7 +242,7 @@ import time
         </section>
 
         <section class="slide">
-            <h2>Exercise!</h2>
+            <h2>Exercise</h2>
             <p>We just tried determining if a character exists in a string:
     <pre><code>statement = "'f' in 'food'"
 timeit.timeit(statement)</code></pre>
@@ -281,7 +285,7 @@ timeit.timeit(statement2)</code></pre>
         <section class="slide">
             <h2>cProfiler</h2>
             <p>Can be run as a module on an entire application
-        <pre><code>python -m cProfile integrate_main.py
+        <pre><code>python -m cProfile [-o output_file] [-s sort_order] integrate_main.py
 
  11111128 function calls in 8.283 seconds
 
@@ -299,7 +303,9 @@ timeit.timeit(statement2)</code></pre>
             <li>percall: cumtime / ncalls
             <li>filename:lineno: location of function
         </ul>
+        <!--
         <p>"primitive" calls are those not induced via recursion
+        -->
     </section>
 
     <section class="slide">
@@ -341,7 +347,7 @@ timeit.timeit(statement2)</code></pre>
         </section>
         <section class="slide">
         <h2>pstats</h2>
-        <pre><code>python -mcProfile -o prof_dump  ./define.py Robot
+        <pre><code>python -m cProfile -o prof_dump  ./define.py Robot
 python -m pstats
 % read prof_dump
 
@@ -419,10 +425,7 @@ pyprof2calltree -i dump.profile -o dump.callgrind</code>
             <h2>Run Snake Run installation</h2>
             <p>
 <pre><code># on Mac, it's easier to install wxPython via native installer and install runsnakerun into your system Python
-# then run the runsnake32 wrapper:
-runsnake32 dump.profile
 
-# or on Linux:
 runsnake dump.profile
         </code>
         </pre>
